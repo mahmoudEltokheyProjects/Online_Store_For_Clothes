@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="vendors/font-awesome.min.css">
+		<style>
+			/* ---------------- global ------------------- */
+			*
+			{
+				font-family: sans-serif ;
+				box-sizing: border-box ;
+			}
+			body
+			{
+				padding: 0 ;
+				margin: 0 ;
+			}
+			/* ************************************************** newsLetter section ************************************** */
+			.newsLetter
+			{
+			/*	border: 2px solid #f00;*/
+				width: 100%;
+				height: auto ;
+				overflow: hidden ;
+				background-color: #2980b9 ;
+				margin-bottom: 20px ;
+			}
+			.newsLetter .newsLetterContainer
+			{
+			/*	border: 2px solid #f0f;*/
+				width: 90%;
+				height: auto ;
+				overflow: hidden ;
+				margin: 10px auto ;
+				padding-bottom: 10px ;
+			}
+			.newsLetter  .newsLetterH5
+			{
+				font-size: 45px ;
+				margin-top: 15px ;
+				margin-bottom: 5px ;
+				text-transform: capitalize ;
+				color: #fff ;
+				text-align: center ;
+			}
+			.newsLetter .newsLetterPara
+			{
+				font-size: 22px ;
+				color: #fff ;
+				margin-top: 8px ;
+				margin-bottom: 10px ;
+				text-align: center ;
+			}
+			/* ---------- email field and submit button container ---------- */
+			.newsLetter  .emailFieldAndBtnContainer
+			{
+				width: 650px;
+				height: auto ;
+				overflow: hidden ;
+				display: block ;
+				margin: 15px auto ;
+				border-radius: 30px ;
+				background-color: rgba(0,0,0,0.3) ;
+			}
+			/* ---------- email field container ---------- */
+			.newsLetter  .emailFieldAndBtnContainer .emailFieldContainer
+			{
+				/* total_width = width + margin_left + margin_right = 71 + 1 + 1 = 73%	*/
+				width: 71%;
+				float: left ;
+			/*	border: 2px solid #f00; */
+				margin: 1% ;
+				border: 0 ;
+			}
+			/* ---------- email field container ---------- */
+			.newsLetter  .emailFieldAndBtnContainer .emailFieldContainer input[type=email]
+			{
+				width: 100% ;
+				padding-top: 10px ;
+				padding-left: 15px ;
+				background-color: transparent ;
+				border: 0 ;
+				outline: 0 ;
+				color: #fff ;
+				font-size: 20px ;
+			}
+			.newsLetter  .emailFieldAndBtnContainer .emailFieldContainer input[type=email]::-webkit-input-placeholder
+			{
+				text-transform: capitalize ;
+				font-size: 20px ;
+			}
+			/* ---------- submit button container ---------- */
+			.newsLetter  .emailFieldAndBtnContainer .submitContainer
+			{
+				/* total_width = width + margin-right = 25 + 2 = 27%	*/
+				width: 25%;
+				margin-top: 1% ;
+				margin-bottom: 1% ;
+				margin-right: 2% ;
+				float: right;
+			/*	border: 2px solid #0f0;*/
+				text-align: right;
+				border-radius: 50px ;
+			}
+			/* ---------- submit button container ---------- */
+			.newsLetter  .emailFieldAndBtnContainer .submitContainer input[type=submit]
+			{
+				width: 100% ;
+				padding: 9px ;	
+				border-radius: 50px ;
+				border: 0 ;
+				outline: 0 ;
+				font-size: 20px ;
+				background-color: #2980b9 ;
+				color: #fff ;
+				text-transform: capitalize ;
+				cursor: pointer ;
+			}
+			/* /////////////////////////////////////////////// Reponsive /////////////////////////////////////////////// */
+			@media(min-width:0px) and (max-width:750px)
+			{
+				.newsLetter  .newsLetterH5
+				{
+					font-size: 35px ;
+				}
+				.newsLetter .newsLetterPara
+				{
+					font-size: 17px ;
+				}
+				/* ---------- email field and submit button container ---------- */
+				.newsLetter  .emailFieldAndBtnContainer
+				{
+					width: 425px;
+				}
+				/* ---------- email field container ---------- */
+				.newsLetter  .emailFieldAndBtnContainer .emailFieldContainer input[type=email]   ,
+				.newsLetter  .emailFieldAndBtnContainer .emailFieldContainer input[type=email]::-webkit-input-placeholder
+				{
+					font-size: 18px ;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- ************************************************** newLetter section ************************************** -->
+		<div class="newsLetter" id="newsLetterId">
+			<div class="newsLetterContainer">
+				<h5 class="newsLetterH5">newsletter</h5>
+				<p class="newsLetterPara">Get In Touch For Latest Discounts And Updates</p>
+				<div class="emailFieldAndBtnContainer">
+					<!-- email field container -->
+					<div class="emailFieldContainer">
+						<input type="email" placeholder="enter your email" id="emailFieldId">
+					</div>
+					<!-- submit field container -->
+					<div class="submitContainer">
+						<input type="submit" value="submit" name="submitName">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			/* ************************************************** newsLetter section ************************************** */	
+			var footerEmailFieldEl = document.getElementById("emailFieldId") ;
+			/* placeholder هيحذف ال emailField لما احط الفارة علي ال  */
+			footerEmailFieldEl.onfocus = function()
+			{
+				if( footerEmailFieldEl.getAttribute("placeholder")!=="" )
+				{
+					footerEmailFieldEl.setAttribute("placeholder","") ;
+				}
+			}
+			/* placeholder هيحط ال emailField لما اشيل الفارة من علي ال  */
+			footerEmailFieldEl.onblur = function()
+			{
+				if( footerEmailFieldEl.getAttribute("placeholder") =="" )
+				{
+					footerEmailFieldEl.setAttribute("placeholder","enter your email");
+				}
+			}
+		</script>
+	</body>
+</html>

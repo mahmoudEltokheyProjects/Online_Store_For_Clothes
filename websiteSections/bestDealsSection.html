@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="vendors/font-awesome.min.css">
+		<style>
+			/* ---------------- global ------------------- */
+			*
+			{
+				font-family: sans-serif ;
+				box-sizing: border-box ;
+			}
+			body
+			{
+				padding: 0 ;
+				margin: 0 ;
+			}
+			/* ************************************************** best deals section ************************************** */
+			.bestDeals
+			{
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+			/*	border: 2px solid #f00;*/
+				margin-top: 20px;
+			}
+			.bestDeals .bestDealsContainer
+			{
+				width: 90%;
+				height: auto;
+				overflow: hidden;
+				margin: 10px auto ;
+			/*	border: 2px solid #00f;*/
+			}
+			.bestDeals .bestDealsContainer  h3
+			{
+				width: 300px;
+				height: 60px;
+				font-size: 25px;
+				background-color: #2980B9;
+				border-top-right-radius: 50px;
+				padding-top: 15px;
+				padding-bottom: 10px;
+				padding-left: 50px;
+				color: #fff;
+				text-transform: capitalize;
+				margin: 0;
+			}
+			.bestDeals .bestDealsContainer .bestDealsLine
+			{
+				width: 100% ;
+				padding:1.5px ;
+				background-color: #bbb ;
+				margin: 0 ;
+			}
+			/* ############################## row 1 : two parts : Latest Laptop && New Headphone ############################## */
+			/* /////////////////////////// common features /////////////////////////// */
+			/* -------- left part --------  */
+			.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass ,
+			/* -------- right part --------  */
+			.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass
+			{
+				border-radius: 20px ;
+				margin-top: 2.5% ;
+				float: left ;
+				height: 300px ;
+				overflow: hidden;
+			/*	border: 2px solid #0f0;*/
+				position: relative ;
+				height: 300px ;
+				overflow: hidden ;	
+				background-repeat: no-repeat ;
+				background-size: cover ;
+				background-position: center ;
+			}
+			/* -------- left part  --------  */
+			.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass 
+			{
+				width: 48.5% ;
+				margin-right: 1.5% ;
+				background-image: url("images/home_img3.jpg");
+			}
+			/* -------- right part  --------  */
+			.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass
+			{
+				width: 48.5% ;
+				margin-left: 1.5% ;
+				background-image: url("images/deal2.jpg");
+			}
+			/* -------- left part  : container of h4 , p  -------- */
+			/* -------- right part : container of h4 , p  -------- */
+			.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer ,
+			.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer 
+			{
+				position: absolute;
+				width:80%;
+				top: 25%;
+				left: 5% ;
+			/*	border: 2px solid #00f; */
+			}
+			/* -------- left part  : h4  -------- */
+			/* -------- right part : h4  -------- */
+			.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer .leatestLaptopH4 ,
+			.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer  .newHeadphoneH4
+			{
+				font-size: 40px;
+				text-transform: capitalize ;
+				color: #fff;
+				margin: 0 ;
+			}
+			/* -------- left part   :  paragraph  -------- */
+			/* -------- right part  :  paragraph  -------- */
+			.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer .leatestLaptopPara ,
+			.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer  .newHeadphonePara
+			{
+				font-size: 23px;
+				text-transform: capitalize ;
+				color: #fff;
+			}
+			/* -------- left part   :  button  -------- */
+			/* -------- right part  :  button  -------- */
+			.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer .leatestLaptopBtn ,
+			.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer  .newHeadphoneBtn
+			{
+				width: 35% ; 
+				height: auto;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				background-color:#2980B9 ;
+				color: #fff;
+				text-transform: capitalize ;
+				font-size: 25px; 
+				cursor: pointer ;
+				border: 0 ;
+				outline: 0 ;
+				transition: 0.3s ease-in-out ;
+			}
+			/* -------- left part   :  button : hover  -------- */
+			/* -------- right part  :  button : hover   -------- */
+			.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer .leatestLaptopBtn:hover ,
+			.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer  .newHeadphoneBtn:hover
+			{
+				letter-spacing: 2px ;
+				background-color:rgba(41,128,185,0.5) ;
+			}
+			/* ############################## row 2 : fast Delivery && support && easy Payment ############################## */
+			.bestDealsBox2
+			{
+			/*	border: 2px solid #ff0;*/
+				/*	left or right سواء كان float عشان الغي تاثير ال */
+				clear: both ;
+			}
+			/* /////////////////////////// common features /////////////////////////// */
+			/* -------- fast Delivery part --------  */
+			.bestDealsBox2 .fastDeliveryClass 	, 
+			/* -------- support part --------------  */
+			.bestDealsBox2 .supportClass 		,
+			/* -------- easy Payments part --------  */
+			.bestDealsBox2 .easyPaymentsClass
+			{
+				width: 31.3333%;
+				margin: 1% ;
+				float: left ;
+				border: 2px solid #2980B9 ;
+				text-align: center ;
+			}
+			/* --------------- 10 Days Replacements part -------------------- */
+			.bestDealsBox2  .replacementClass
+			{
+				width: 98%;
+				margin-top: 5% ;
+				margin-bottom: 2% ;
+				margin-left: 1% ;
+				margin-right: 1% ;
+				/*	left or right سواء كان float عشان الغي تاثير ال */
+				clear: both ;
+				border: 2px solid #2980B9 ;
+				text-align: center ;
+			}
+			/* /////////////////////////// common features /////////////////////////// */
+			/* --------------- h4 ---------------------- */
+			.bestDealsBox2  .fastDeliveryClass  .fastDeliveryContainer  .fastDeliveryH4 ,
+			.bestDealsBox2  .supportClass 		.supportContainer 	    .supportH4 	    ,
+			.bestDealsBox2  .easyPaymentsClass  .easyPaymentsContainer  .easyPaymentsH4 ,
+			.bestDealsBox2  .replacementClass   .replacementContainer   .replacementH4 
+			{
+				font-size: 25px ;
+				margin-top: 10px ;
+				margin-bottom:  10px ;
+				color: #333 ;
+			}
+			/* --------------- p ---------------------- */
+			.bestDealsBox2  .fastDeliveryClass  .fastDeliveryContainer  .fastDeliveryPara ,
+			.bestDealsBox2  .supportClass 		.supportContainer 	    .supportPara 	    ,
+			.bestDealsBox2  .easyPaymentsClass  .easyPaymentsContainer  .easyPaymentsPara ,
+			.bestDealsBox2  .replacementClass   .replacementContainer   .replacementPara 
+			{
+				font-size: 18px ;
+				line-height: 1.5 ;
+				color: #666 ;
+				padding-left: 10px ;
+				padding-right: 10px ;
+			}
+			/* /////////////////////////////////////////////// Reponsive /////////////////////////////////////////////// */
+			@media(min-width:0px) and (max-width:700px)
+			{
+				.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass
+				{
+					margin-top: 30px ;
+				}
+				/* ############################## row 1 : two parts : Latest Laptop && New Headphone ############################## */
+				/* /////////////////////////// common features /////////////////////////// */
+				/* -------- left part --------  */
+				.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass ,
+				/* -------- right part --------  */
+				.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass
+				{
+					width: 98%; 
+					margin-left: 1% ;
+					margin-right: 1% ;
+					height: 300px;
+				}
+				/* -------- left part  : h4  -------- */
+				/* -------- right part : h4  -------- */
+				.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer .leatestLaptopH4 ,
+				.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer  .newHeadphoneH4
+				{
+					font-size: 35px;
+				}
+				/* -------- left part   :  paragraph  -------- */
+				/* -------- right part  :  paragraph  -------- */
+				.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer .leatestLaptopPara ,
+				.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer  .newHeadphonePara
+				{
+					font-size: 20px;
+				}
+				/* ############################## row 2 : fast Delivery && support && easy Payment ############################## */
+				/* /////////////////////////// common features /////////////////////////// */
+				/* -------- fast Delivery part --------  */
+				.bestDealsBox2 .fastDeliveryClass 	, 
+				/* -------- support part --------------  */
+				.bestDealsBox2 .supportClass 		,
+				/* -------- easy Payments part --------  */
+				.bestDealsBox2 .easyPaymentsClass   ,
+				/* --------------- 10 Days Replacements part -------------------- */
+				.bestDealsBox2  .replacementClass
+				{
+					width: 96%;
+					margin: 2% ;
+					border: 2px solid #2980B9 ;
+			/*		text-align: center ;*/
+				}	
+			}
+			@media(min-width:701px) and (max-width:1030px)
+			{
+				.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass
+				{
+					margin-top: 30px ;
+				}
+				/* ############################## row 1 : two parts : Latest Laptop && New Headphone ############################## */
+				/* /////////////////////////// common features /////////////////////////// */
+				/* -------- left part --------  */
+				.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass ,
+				/* -------- right part --------  */
+				.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass
+				{
+					width: 98%; 
+					margin: 1% ;
+					height: 250px;
+				}
+				/* -------- left part  : h4  -------- */
+				/* -------- right part : h4  -------- */
+				.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer .leatestLaptopH4 ,
+				.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer  .newHeadphoneH4
+				{
+					font-size: 35px;
+				}
+				/* -------- left part   :  paragraph  -------- */
+				/* -------- right part  :  paragraph  -------- */
+				.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer .leatestLaptopPara ,
+				.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer  .newHeadphonePara
+				{
+					font-size: 22px;
+				}
+			/* ############################## row 2 : fast Delivery && support && easy Payment ############################## */
+				/* /////////////////////////// common features /////////////////////////// */
+				/* -------- fast Delivery part --------  */
+				.bestDealsBox2 .fastDeliveryClass 	, 
+				/* -------- support part --------------  */
+				.bestDealsBox2 .supportClass 		,
+				/* -------- easy Payments part --------  */
+				.bestDealsBox2 .easyPaymentsClass   ,
+				/* --------------- 10 Days Replacements part -------------------- */
+				.bestDealsBox2  .replacementClass
+				{
+					width: 48%;
+					margin: 1% ;
+					display: inline-block ;
+					border: 2px solid #2980B9 ;
+				/* text-align: center ; */
+				}
+				/* /////////////////////////// common features /////////////////////////// */
+				/* --------------- h4 ---------------------- */
+				.bestDealsBox2  .fastDeliveryClass  .fastDeliveryContainer  .fastDeliveryH4 ,
+				.bestDealsBox2  .supportClass 		.supportContainer 	    .supportH4 	    ,
+				.bestDealsBox2  .easyPaymentsClass  .easyPaymentsContainer  .easyPaymentsH4 ,
+				.bestDealsBox2  .replacementClass   .replacementContainer   .replacementH4 
+				{
+					font-size: 20px ;	
+				}
+				/* --------------- p ---------------------- */
+				.bestDealsBox2  .fastDeliveryClass  .fastDeliveryContainer  .fastDeliveryPara ,
+				.bestDealsBox2  .supportClass 		.supportContainer 	    .supportPara 	    ,
+				.bestDealsBox2  .easyPaymentsClass  .easyPaymentsContainer  .easyPaymentsPara ,
+				.bestDealsBox2  .replacementClass   .replacementContainer   .replacementPara 
+				{
+					font-size: 15px ;
+				}
+			}
+		</style>
+	  </head>
+	<body>
+		<!-- ************************************************** best deals section ************************************** -->
+		<div class="bestDeals" id="bestDealsId">
+			<div class="bestDealsContainer">
+				<h3> best deals</h3>
+				<div class="bestDealsLine"></div>
+				<!-- ******************** row 1 : two parts : Latest Laptop && New Headphone **************** -->
+				<div class="bestDealsBox1">
+					<!-- left part -->
+					<div class="leatestLaptopClass">
+						<div class="leatestLaptopContainer">
+							<h4  class="leatestLaptopH4">Latest Laptop</h4>
+							<p class="leatestLaptopPara">Up to 25% Off On First Purchase</p>
+							<button class="leatestLaptopBtn">explore</button>
+						</div>
+					</div>
+					<!-- right part -->
+					<div class="newHeadphoneClass">
+						<div class="newHeadphoneContainer">
+							<h4  class="newHeadphoneH4">New Headphone</h4>
+							<p class="newHeadphonePara">Up to 25% Off On First Purchase</p>
+							<button class="newHeadphoneBtn">explore</button>
+						</div>
+					</div>
+				</div>
+				<!-- ****************** row 2 : fast Delivery && support && easy Payment ****************** -->
+				<div class="bestDealsBox2">
+					<!-- fast Delivery part -->
+					<div class="fastDeliveryClass">
+						<div class="fastDeliveryContainer">
+							<h4  class="fastDeliveryH4">Fast Delivery</h4>
+							<p class="fastDeliveryPara">
+								Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Animi, Molestiae?
+							</p>
+						</div>
+					</div>
+					<!-- support part -->
+					<div class="supportClass">
+						<div class="supportContainer">
+							<h4  class="supportH4">24 X 7 Support</h4>
+							<p class="supportPara">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Animi, Molestiae?</p>
+						</div>
+					</div>
+					<!-- easy Payments part -->
+					<div class="easyPaymentsClass">
+						<div class="easyPaymentsContainer">
+							<h4  class="easyPaymentsH4">Easy Payments</h4>
+							<p class="easyPaymentsPara">
+								Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Animi, Molestiae?
+							</p>
+						</div>
+					</div>
+					<!-- 10 Days Replacements part -->
+					<div class="replacementClass">
+						<div class="replacementContainer">
+							<h4  class="replacementH4">10 Days Replacements</h4>
+							<p class="replacementPara">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Animi, Molestiae?</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>

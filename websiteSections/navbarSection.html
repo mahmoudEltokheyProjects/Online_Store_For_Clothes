@@ -1,0 +1,370 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="vendors/font-awesome.min.css">
+		<style>
+				/* ---------------- global ------------------- */
+				*
+				{
+					font-family: sans-serif ;
+					box-sizing: border-box ;
+				}
+				body
+				{
+					padding: 0 ;
+					margin: 0 ;
+				}
+				/* *********************************** navbar section *********************************** */
+				.navbarClass
+				{
+				/*	border: 2px solid #f00 ;*/
+					width: 100% ;
+					height: auto ;
+					/* عشان المحتوي يكون داخل الاب	*/
+					overflow: hidden ;
+				}
+				.navbarClass .navbarContainerClass 
+				{
+				/*	border: 2px solid #ff0 ;*/
+					width: 100% ;
+					height: auto ;
+					/* عشان المحتوي يكون داخل الاب	*/
+					overflow: hidden ;
+					margin: 0px auto ;
+				}
+				/* ************************************************ first row of navbar ******************************************** */
+				.navbarClass .navbarContainerClass  .row1Navbar
+				{
+				/*	border: 2px solid #f0f ;*/
+					width: 100% ;
+					height: auto ;
+					/* عشان المحتوي يكون داخل الاب	*/
+					overflow: hidden ;
+					margin: 0 ;
+					padding-left: 20px ;
+				}
+				/* ************************** logo of navbar ************************** */
+				/* ************************ seach field of navbar ********************* */
+				.navbarClass .navbarContainerClass  .row1Navbar  .navbarLogoClass ,
+				.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass
+				{
+					height: auto ;
+					/* عشان المحتوي يكون داخل الاب	*/
+					overflow: hidden ;
+					margin: 0 ;
+					padding: 0 ;
+				}
+				/* ************************** logo of navbar ************************** */
+				.navbarClass .navbarContainerClass  .row1Navbar  .navbarLogoClass 
+				{
+					width: 50% ;
+					float: left ;
+				/*	border: 2px solid #0ff ;*/
+				}
+				/* ************************** logo of navbar : icon  ************************** */
+				.navbarClass .navbarContainerClass  .row1Navbar  .navbarLogoClass  i
+				{
+					color: #2980B9;
+				}
+				/* ************************** logo of navbar : p ************************** */
+				.navbarClass .navbarContainerClass  .row1Navbar  .navbarLogoClass  p
+				{
+					font-size: 25px;
+					text-transform: capitalize ;	
+					font-weight: bold;
+				}
+				/* ********************** seach field of navbar *********************** */
+				.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass
+				{
+					/*	total_width = 48 + 2 = 50% */
+					width: 48% ;
+					float: left;
+					margin-right: 2% ;
+					text-align: left;
+				/*	border: 2px solid #0f0 ;*/
+					padding-top: 12px; 
+					padding-bottom:12px; 
+				}
+				/* ********************** seach field of navbar : inputField container  *********************** */
+				.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass   .searchInputFieldContainer
+				{
+					float: left ;
+				/*	border: 2px solid #0ff ;*/
+					width: 90%;
+				}
+				/* ********************** seach field of navbar : <input>  *********************** */
+				.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass   .searchInputFieldContainer input
+				{
+					height: 50px;
+					width: 100% ;
+					padding: 10px; 
+					font-size: 20px ;
+					border: 2px solid #555;
+				}
+				/* ********************** seach field of navbar : input : search icon  *********************** */
+				.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass .searchIconContainer
+				{
+					float: right;
+					display: inline-block;
+					width: 10%;
+					padding-top: 13px;
+					padding-bottom:14px;
+					padding-left: 3% ;
+					padding-right:2% ;
+					background-color: #2980B9;
+				}
+				/* ********************** seach field of navbar : input : search icon <i></i>  *********************** */
+				.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass .searchIconContainer a i
+				{ 
+					font-size: 23px ;
+					text-decoration: none ;
+					color: #fff;
+				}
+				/* ************************************************ second row of navbar ******************************************** */
+				.navbarClass  .navbarContainerClass .row2Navbar
+				{
+					height: auto ;
+					overflow: hidden ;
+				/*	border: 1px solid #0ff;*/
+					background-color: #2980B9 ;
+					padding-left: 20px ; 
+				}
+				/* *********************** left  and right part :  second row : links  and icons of navbar *********************** */
+				.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass  ,
+				.navbarClass  .navbarContainerClass .row2Navbar .navbarRow2IconsClass 
+				{
+					height: auto ;
+					overflow: hidden ;
+				/*	border: 2px solid #f0f;*/
+				}
+				/* *************************************** left part :  second row : links of navbar ********************************* */
+				.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass  
+				{
+					float: left ;
+					width:80% ;	
+				/*	border: 2px solid #ff0;*/
+				}
+				/* ************************** second row : links of navbar : <ul></ul> ************************ */
+				.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass .navbarLinksClassUl
+				{
+					list-style: none ;
+					margin-top: 15px ;
+					margin-bottom: 12px ;
+					padding: 0 ;
+				}
+				/* ********************** second row : links of navbar : <ul> <li></li> </ul> ******************* */
+				.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass .navbarLinksClassUl li
+				{
+					display: inline-block ;
+				}
+				/* *********************** second row : links of navbar : <ul> <li></li> </ul> ****************** */
+				.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass .navbarLinksClassUl li  a
+				{
+					text-decoration: none ;
+					padding-right: 10px ;	
+					text-transform: capitalize ;
+					color: #fff;
+					font-weight: bold ;
+					font-size: 20px ;
+					transition: 0.5s ease-in-out ;
+				}
+				/* *********************** second row : links of navbar : <ul> <li></li> </ul> : active  ****************** */
+				.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass .navbarLinksClassUl li  a.active
+				{
+					color: #ff0;
+				}
+				/* ***** second row : links of navbar : <ul> <li> <a class="active"></a></li> </ul> : active  ************* */
+				.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass .navbarLinksClassUl li  a.active
+				{
+					color: #ff0;
+				}
+				/* ***** second row : links of navbar : <ul> <li> <a class="active"></a></li> </ul> : hover  ************* */
+				.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass .navbarLinksClassUl li  a:hover
+				{
+					color: #ff0;
+				}
+				/* ************************** right part : second row : icons of navbar ************************** */
+				.navbarClass  .navbarContainerClass .row2Navbar .navbarSearchFieldClass 
+				{
+				/*	border: 2px solid #0f0 ;*/
+				}
+				/* ************************** right part : second row : container of icons of navbar ************************** */
+				.navbarClass  .navbarContainerClass .row2Navbar .navbarRow2IconsClass 
+				{
+					width: 20%;
+					float: right;
+					text-align: right ;
+				/*	border: 2px solid #f00 ;*/
+					padding-top: 12px ;
+					padding-bottom: 12px ;
+				}
+				/* ************************** right part : second row : <a> <i></i> </a> icons of navbar ************************** */
+				.navbarClass  .navbarContainerClass .row2Navbar .navbarRow2IconsClass  a  i
+				{
+					text-decoration: none ;
+					font-size: 25px ;
+					padding-right: 10px ;
+					color: #fff ;
+					transition: 0.5s ease-in-out ;
+				}
+				/* *********************** right part : second row : hover on  icons of navbar : heart icon ************************ */
+				.navbarClass  .navbarContainerClass .row2Navbar .navbarRow2IconsClass  a.heartIconClass:hover  i
+				{
+					color: #f00 ;
+				}
+				/* *********************** right part : second row : hover on  icons of navbar : shopping icon *********************** */
+				.navbarClass  .navbarContainerClass .row2Navbar .navbarRow2IconsClass  a.shoppingIconClass:hover  i
+				{
+					color: #0f0 ;
+				}
+				/* *********************** right part : second row : hover on  icons of navbar : user icon *********************** */
+				.navbarClass  .navbarContainerClass .row2Navbar .navbarRow2IconsClass  a.userIconClass:hover  i
+				{
+					color: #ff0 ;
+				}
+				/* ############################################## Responsive : navbar ############################################# */
+				@media( min-width:0px) and (max-width:800px)
+				{
+					/* ################################## first row : links  and icons of navbar ################################# */
+					/* ************************** logo of navbar ************************** */
+					/* ************************ seach field of navbar ********************* */
+					.navbarClass .navbarContainerClass  .row1Navbar  .navbarLogoClass 
+					{
+						width: 35%;
+						margin: 0 ;
+					}
+					.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass
+					{
+						width: 65%;
+						margin: 0 ;
+					}
+					/* ************************** logo of navbar : p ************************** */
+					.navbarClass .navbarContainerClass  .row1Navbar  .navbarLogoClass  p
+					{
+						font-size: 23px;
+					}
+					/* ********************** seach field of navbar *********************** */
+					.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass
+					{
+						/*	total_width = 64 + 1 = 65% */
+						width: 64% ;
+						margin-right: 1% ;
+				/*		border: 2px solid #0f0 ;*/
+						padding-top: 12px; 
+						padding-bottom:12px; 
+					}
+					/* ********************** seach field of navbar : inputField container  *********************** */
+					.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass   .searchInputFieldContainer
+					{
+						float: left ;
+				/*		border: 2px solid #0ff ;*/
+						width: 90%;
+					}
+					/* ********************** seach field of navbar : <input>  *********************** */
+					.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass   .searchInputFieldContainer input
+					{
+						height: 40px;
+						width: 100% ;
+						padding: 10px; 
+						font-size: 18px ;
+					}	
+					/* ********************** seach field of navbar : input : search icon  *********************** */
+					.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass .searchIconContainer
+					{
+						float: right;
+						display: inline-block;
+						width: 10%;
+						padding-top: 10px;
+						padding-bottom:10px;
+						padding-left: 2.5% ;
+						padding-right:2.5% ;
+						background-color: #2980B9;
+					}
+					/* ********************** seach field of navbar : input : search icon <i></i>  *********************** */
+					.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass .searchIconContainer a i
+					{ 
+						font-size: 20px ;
+					}
+					/* ################################## second row : links  and icons of navbar################################# */
+					/* *******************left  and right part :  second row : links  and icons of navbar *************** */
+					/* --------------- left part of row2 --------------- */
+					.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass  	
+					{
+						width:75%;
+					}
+					/* --------------- right part of row2 --------------- */
+					.navbarClass  .navbarContainerClass .row2Navbar .navbarRow2IconsClass 
+					{
+						width:25%;
+					}
+					/* ***** second row : links of navbar : <ul> <li> <a></a></li> </ul>  ************* */
+					.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass .navbarLinksClassUl li  a
+					{
+						font-size: 17px;
+					}	
+				}
+			</style>
+		</head>
+	<body>
+		<!-- *********************************** navbar section *********************************** -->
+		<div class="navbarClass"id="navbarId">
+			<div class="navbarContainerClass"id="navbarContainerId">
+				<!-- ************************ first row of navbar *********************** -->
+				<div class="row1Navbar">
+					<!-- logo of navbar	 -->
+					<div class="navbarLogoClass">
+						<p><i class="fa fa-shopping-bag"></i> shopping</p>
+					</div>
+					<!-- seach field of navbar	 -->
+					<div class="navbarSearchFieldClass">
+							<div class="searchInputFieldContainer">
+								<input type="text" class="seachFieldClass"id="seachFieldId"placeholder="search product">
+							</div>
+							<div class="searchIconContainer">
+								<a href="#"><i class="fa fa-search"></i></a>
+							</div>
+					</div>
+				</div>
+				<!-- ************************** second row of navbar ************************** -->
+				<div class="row2Navbar">
+					<!-- second row links of navbar	 -->
+					<div class="navbarLinksClass">
+						<ul class="navbarLinksClassUl">
+							<li><a href="#" class="active">home</a></li>
+							<li><a href="#">arrival</a></li>
+							<li><a href="#">featured</a></li>
+							<li><a href="#">gallery</a></li>
+							<li><a href="#">deal</a></li>
+						</ul>
+					</div>
+					<!-- second row icons of navbar	 -->
+					<div class="navbarRow2IconsClass">
+						<a href="#" class="heartIconClass"><i class="fa fa-heart"></i></a>
+						<a href="#" class="shoppingIconClass"><i class="fa fa-shopping-cart"></i></a>
+						<a href="#" class="userIconClass"><i class="fa fa-user"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+		/* ------------------------- navbar section : search field placeholder --------------------------------------- */
+			var searchFieldEl = document.getElementById("seachFieldId");
+			/*  placeholder هيحذف ال searchField لما احط الفارة علي ال */
+			searchFieldEl.onfocus = function()
+			{
+				if( searchFieldEl.getAttribute("placeholder") !== "" )
+				{
+					searchFieldEl.setAttribute("placeholder","");
+				}
+			}
+			/*   "search product" بقيمة placeholder هحط ال searchField لما اشيل الفارة من علي ال */
+			searchFieldEl.onblur = function()
+			{
+				if( searchFieldEl.getAttribute("placeholder") == "" )
+				{
+					searchFieldEl.setAttribute("placeholder","search product");
+				}
+			}
+		</script>
+	</body>
+</html>

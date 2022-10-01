@@ -1,0 +1,1977 @@
+/* ---------------- global ------------------- */
+*
+{
+	font-family: sans-serif ;
+	box-sizing: border-box ;
+}
+body
+{
+	padding: 0 ;
+	margin: 0 ;
+}
+/* *********************************** navbar section *********************************** */
+.navbarClass
+{
+/*	border: 2px solid #f00 ;*/
+	width: 100% ;
+	height: auto ;
+	/* عشان المحتوي يكون داخل الاب	*/
+	overflow: hidden ;
+}
+.navbarClass .navbarContainerClass 
+{
+/*	border: 2px solid #ff0 ;*/
+	width: 100% ;
+	height: auto ;
+	/* عشان المحتوي يكون داخل الاب	*/
+	overflow: hidden ;
+	margin: 0px auto ;
+}
+/* ************************************************ first row of navbar ******************************************** */
+.navbarClass .navbarContainerClass  .row1Navbar
+{
+/*	border: 2px solid #f0f ;*/
+	width: 100% ;
+	height: auto ;
+	/* عشان المحتوي يكون داخل الاب	*/
+	overflow: hidden ;
+	margin: 0 ;
+	padding-left: 20px ;
+}
+/* ************************** logo of navbar ************************** */
+/* ************************ seach field of navbar ********************* */
+.navbarClass .navbarContainerClass  .row1Navbar  .navbarLogoClass ,
+.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass
+{
+	height: auto ;
+	/* عشان المحتوي يكون داخل الاب	*/
+	overflow: hidden ;
+	margin: 0 ;
+	padding: 0 ;
+}
+/* ************************** logo of navbar ************************** */
+.navbarClass .navbarContainerClass  .row1Navbar  .navbarLogoClass 
+{
+	width: 50% ;
+	float: left ;
+/*	border: 2px solid #0ff ;*/
+}
+/* ************************** logo of navbar : icon  ************************** */
+.navbarClass .navbarContainerClass  .row1Navbar  .navbarLogoClass  i
+{
+	color: #2980B9;
+}
+/* ************************** logo of navbar : p ************************** */
+.navbarClass .navbarContainerClass  .row1Navbar  .navbarLogoClass  p
+{
+	font-size: 25px;
+	text-transform: capitalize ;	
+	font-weight: bold;
+}
+/* ********************** seach field of navbar *********************** */
+.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass
+{
+	/*	total_width = 48 + 2 = 50% */
+	width: 48% ;
+	float: left;
+	margin-right: 2% ;
+	text-align: left;
+/*	border: 2px solid #0f0 ;*/
+	padding-top: 12px; 
+	padding-bottom:12px; 
+}
+/* ********************** seach field of navbar : inputField container  *********************** */
+.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass   .searchInputFieldContainer
+{
+	float: left ;
+/*	border: 2px solid #0ff ;*/
+	width: 90%;
+}
+/* ********************** seach field of navbar : <input>  *********************** */
+.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass   .searchInputFieldContainer input
+{
+	height: 50px;
+	width: 100% ;
+	padding: 10px; 
+	font-size: 20px ;
+	border: 2px solid #555;
+}
+/* ********************** seach field of navbar : input : search icon  *********************** */
+.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass .searchIconContainer
+{
+	float: right;
+	display: inline-block;
+	width: 10%;
+	padding-top: 12px;
+	padding-bottom:14px;
+	padding-left: 3% ;
+	padding-right:2% ;
+	background-color: #2980B9;
+}
+/* ********************** seach field of navbar : input : search icon <i></i>  *********************** */
+.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass .searchIconContainer a i
+{ 
+	font-size: 23px ;
+	text-decoration: none ;
+	color: #fff;
+}
+/* ************************************************ second row of navbar ******************************************** */
+.navbarClass  .navbarContainerClass .row2Navbar
+{
+	height: auto ;
+	overflow: hidden ;
+/*	border: 1px solid #0ff;*/
+	background-color: #2980B9 ;
+	padding-left: 20px ; 
+}
+/* *********************** left  and right part :  second row : links  and icons of navbar *********************** */
+.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass  ,
+.navbarClass  .navbarContainerClass .row2Navbar .navbarRow2IconsClass 
+{
+	height: auto ;
+	overflow: hidden ;
+/*	border: 2px solid #f0f;*/
+}
+/* *************************************** left part :  second row : links of navbar ********************************* */
+.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass  
+{
+	float: left ;
+	width:80% ;	
+/*	border: 2px solid #ff0;*/
+}
+/* ************************** second row : links of navbar : <ul></ul> ************************ */
+.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass .navbarLinksClassUl
+{
+	list-style: none ;
+	margin-top: 15px ;
+	margin-bottom: 12px ;
+	padding: 0 ;
+}
+/* ********************** second row : links of navbar : <ul> <li></li> </ul> ******************* */
+.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass .navbarLinksClassUl li
+{
+	display: inline-block ;
+}
+/* *********************** second row : links of navbar : <ul> <li></li> </ul> ****************** */
+.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass .navbarLinksClassUl li  a
+{
+	text-decoration: none ;
+	padding-right: 10px ;	
+	text-transform: capitalize ;
+	color: #fff;
+	font-weight: bold ;
+	font-size: 20px ;
+	transition: 0.5s ease-in-out ;
+}
+/* *********************** second row : links of navbar : <ul> <li></li> </ul> : active  ****************** */
+.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass .navbarLinksClassUl li  a.active
+{
+	color: #ff0;
+}
+/* ***** second row : links of navbar : <ul> <li> <a class="active"></a></li> </ul> : active  ************* */
+.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass .navbarLinksClassUl li  a.active
+{
+	color: #ff0;
+}
+/* ***** second row : links of navbar : <ul> <li> <a class="active"></a></li> </ul> : hover  ************* */
+.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass .navbarLinksClassUl li  a:hover
+{
+	color: #ff0;
+}
+/* ************************** right part : second row : icons of navbar ************************** */
+.navbarClass  .navbarContainerClass .row2Navbar .navbarSearchFieldClass 
+{
+/*	border: 2px solid #0f0 ;*/
+}
+/* ************************** right part : second row : container of icons of navbar ************************** */
+.navbarClass  .navbarContainerClass .row2Navbar .navbarRow2IconsClass 
+{
+	width: 20%;
+	float: right;
+	text-align: right ;
+/*	border: 2px solid #f00 ;*/
+	padding-top: 12px ;
+	padding-bottom: 12px ;
+}
+/* ************************** right part : second row : <a> <i></i> </a> icons of navbar ************************** */
+.navbarClass  .navbarContainerClass .row2Navbar .navbarRow2IconsClass  a  i
+{
+	text-decoration: none ;
+	font-size: 25px ;
+	padding-right: 10px ;
+	color: #fff ;
+	transition: 0.5s ease-in-out ;
+}
+/* *********************** right part : second row : hover on  icons of navbar : heart icon ************************ */
+.navbarClass  .navbarContainerClass .row2Navbar .navbarRow2IconsClass  a.heartIconClass:hover  i
+{
+	color: #f00 ;
+}
+/* *********************** right part : second row : hover on  icons of navbar : shopping icon *********************** */
+.navbarClass  .navbarContainerClass .row2Navbar .navbarRow2IconsClass  a.shoppingIconClass:hover  i
+{
+	color: #0f0 ;
+}
+/* *********************** right part : second row : hover on  icons of navbar : user icon *********************** */
+.navbarClass  .navbarContainerClass .row2Navbar .navbarRow2IconsClass  a.userIconClass:hover  i
+{
+	color: #ff0 ;
+}
+/* ############################################## Responsive : navbar ############################################# */
+@media( min-width:0px) and (max-width:800px)
+{
+	/* ################################## first row : links  and icons of navbar ################################# */
+	/* ************************** logo of navbar ************************** */
+	/* ************************ seach field of navbar ********************* */
+	.navbarClass .navbarContainerClass  .row1Navbar  .navbarLogoClass 
+	{
+		width: 35%;
+		margin: 0 ;
+	}
+	.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass
+	{
+		width: 65%;
+		margin: 0 ;
+	}
+	/* ************************** logo of navbar : p ************************** */
+	.navbarClass .navbarContainerClass  .row1Navbar  .navbarLogoClass  p
+	{
+		font-size: 23px;
+	}
+	/* ********************** seach field of navbar *********************** */
+	.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass
+	{
+		/*	total_width = 64 + 1 = 65% */
+		width: 64% ;
+		margin-right: 1% ;
+/*		border: 2px solid #0f0 ;*/
+		padding-top: 12px; 
+		padding-bottom:12px; 
+	}
+	/* ********************** seach field of navbar : inputField container  *********************** */
+	.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass   .searchInputFieldContainer
+	{
+		float: left ;
+/*		border: 2px solid #0ff ;*/
+		width: 90%;
+	}
+	/* ********************** seach field of navbar : <input>  *********************** */
+	.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass   .searchInputFieldContainer input
+	{
+		height: 40px;
+		width: 100% ;
+		padding: 10px; 
+		font-size: 18px ;
+	}	
+	/* ********************** seach field of navbar : input : search icon  *********************** */
+	.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass .searchIconContainer
+	{
+		float: right;
+		display: inline-block;
+		width: 10%;
+		padding-top: 9px;
+		padding-bottom:10px;
+		padding-left: 2.5% ;
+		padding-right:2.5% ;
+		background-color: #2980B9;
+	}
+	/* ********************** seach field of navbar : input : search icon <i></i>  *********************** */
+	.navbarClass .navbarContainerClass  .row1Navbar  .navbarSearchFieldClass .searchIconContainer a i
+	{ 
+		font-size: 20px ;
+	}
+	/* ################################## second row : links  and icons of navbar################################# */
+	/* *******************left  and right part :  second row : links  and icons of navbar *************** */
+	/* --------------- left part of row2 --------------- */
+	.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass  	
+	{
+		width:75%;
+	}
+	/* --------------- right part of row2 --------------- */
+	.navbarClass  .navbarContainerClass .row2Navbar .navbarRow2IconsClass 
+	{
+		width:25%;
+	}
+	/* ***** second row : links of navbar : <ul> <li> <a></a></li> </ul>  ************* */
+	.navbarClass  .navbarContainerClass .row2Navbar .navbarLinksClass .navbarLinksClassUl li  a
+	{
+		font-size: 17px;
+	}	
+}
+/* *********************************** header section *********************************** */
+.headerClass
+{
+	width: 100%;
+	height: auto;
+	 overflow: hidden; 
+/*	border: 2px solid #f00 ;*/
+}
+/* -----------------  carousel container : image , h2 , p  ----------------- */
+.headerClass .carouselContainer
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+/*	border: 2px solid #0f0 ;*/
+}
+/* -----------------  carousel container ul : image , h2 , p  ----------------- */
+.headerClass .carouselContainer ul
+{
+	width: 400% ;
+	height: auto;
+	overflow: hidden;
+/*	border: 2px solid #00f ;*/
+	list-style: none ;
+	margin: 0 ;
+	padding: 0 ;
+	/*	smooth يكون شكله translateX عشان ال */
+	transition:2s ease-in-out;
+}
+/* -----------------  carousel container ul li : image , h2 , p  ----------------- */
+.headerClass .carouselContainer ul li
+{
+	position: relative;
+	float: left ;
+	width: 25% ;
+	height: 500px ;
+/*	border: 2px solid #000 ;*/
+}
+/* -----------------  carousel container ul li : image  ----------------- */
+.headerClass .carouselContainer ul li img
+{
+	width:100%; 
+	height: 500px ;
+	position: absolute ;
+	left: 0 ;
+	top: 0 ;
+}
+/* -----------------  carousel container ul li : image , h2 , p  ----------------- */
+.carouselImageInfo
+{
+	position: absolute ;
+	width: 500px;
+	height: auto ;
+	overflow: hidden;
+/*	border: 2px solid #f00;*/
+	left: 5% ;
+	bottom: 15% ;
+}
+/* -----------------  carousel container ul li : h2  ----------------- */
+.headerClass .carouselContainer ul li h2
+{
+	font-size: 50px;
+	color: #fff;
+	margin-top: 5px ;
+	margin-bottom: 10px ;
+	padding: 0 ;
+	text-shadow: 2px 3px 5px #000 ;
+}
+/* -----------------  carousel container ul li : p  ----------------- */
+.headerClass .carouselContainer ul li p
+{
+/*	border: 2px solid #00f; */
+	font-size: 25px;
+	color: #fff;
+	margin-top:10px ;
+	margin-bottom: 15px ;
+}
+/* -----------------  carousel container ul li : button  ----------------- */
+.headerClass .carouselContainer ul li button
+{
+	width: 150px ;
+	height: 50px ;
+	padding: 10px ;
+	text-transform: capitalize ;
+	font-size: 20px ;
+	color: #fff;
+	background-color: #2980B9;
+	outline: 0 ;
+	border: 0 ;
+	cursor: pointer;
+	transition: 0.5s ;
+}
+/* -----------------  carousel container ul li : button :hover  ----------------- */
+.headerClass .carouselContainer ul li button:hover
+{
+	letter-spacing: 2px ;
+	background-color: #f00;
+}
+/* radio buttons */
+.headerClass .inputCarouselContainer input
+{
+	display: none ; 
+}
+/* ********************* carousel : bullets ********************* */
+.headerClass .bulletsContainer
+{
+	position: relative;
+	/*  فوق الصورة bulletsعشان احط ال  */
+	top: -40px;
+/*	border: 2px solid #000; */
+	margin: 0px auto ;
+	text-align: center;
+}	
+.headerClass .bulletsContainer label
+{
+	display: inline-block ;
+	width: 10px ;
+	height: 10px;
+	padding: 8px;
+	border-radius: 50%;
+	margin: 5px ;
+	border:2px solid #fff ;
+	cursor: pointer;
+	transition: 0.5s ease-in-out ;
+}
+.headerClass input
+{
+	display: none; 
+}
+.headerClass #radio-1:checked ~ .bulletsContainer #dot1Id ,
+.headerClass #radio-2:checked ~ .bulletsContainer #dot2Id ,
+.headerClass #radio-3:checked ~ .bulletsContainer #dot3Id ,
+.headerClass #radio-4:checked ~ .bulletsContainer #dot4Id 
+{
+	background-color: #f00 ;
+}
+/* you have to repeat this with each slide ,  25% movement , 100/slidesNum  */
+.headerClass #radio-1:checked ~ .carouselContainer .carouselUL
+{
+	transform: translateX(0%);
+}
+.headerClass #radio-2:checked ~  .carouselContainer .carouselUL 
+{
+	transform: translateX(-25%);
+}
+.headerClass #radio-3:checked ~  .carouselContainer .carouselUL  
+{
+	transform: translateX(-50%);
+}
+.headerClass #radio-4:checked ~  .carouselContainer .carouselUL  
+{
+	transform: translateX(-75%);
+}
+.bulletsContainer  label:hover
+{
+	cursor: pointer;
+	background-color: #f00 ;
+}
+/* ############################################## Responsive : navbar ############################################# */
+@media( min-width:0px) and (max-width:987px)
+{
+	/* -----------------  carousel container ul li : h2  ----------------- */
+	.headerClass .carouselContainer ul li h2
+	{
+		font-size: 25px;
+	}
+	/* -----------------  carousel container ul li : p  ----------------- */
+	.headerClass .carouselContainer ul li p
+	{
+		font-size: 15px;
+		font-weight: bold ;
+	}
+	/* -----------------  carousel container ul li : button  ----------------- */
+	.headerClass .carouselContainer ul li button
+	{
+		width: 100px ;
+		height: 40px ;
+		padding: 8px ;
+		font-size: 18px;
+	}
+}
+
+/* *********************************************************** Arrival section ********************************************************* */
+.arrivalClass
+{
+	width: 100% ;
+	height: auto ;
+	overflow: hidden ;
+/*	border: 2px solid #00f; */
+}
+.arrivalClass  .arrivalContainerClass
+{
+	width: 95% ;
+	height: auto ;
+	overflow: hidden ;
+	margin: 5px auto ;
+/*	border: 2px solid #f0f; 	*/
+}
+/* header of arrival section : h2 */
+.arrivalClass  .arrivalContainerClass h2
+{
+	width: 300px ;
+	height: 60px;
+	background-color: #2980B9 ;
+	border-top-right-radius: 50px ;	
+	padding-top: 15px; 
+	padding-bottom: 10px; 
+	padding-left: 50px; 
+	color: #fff ;
+	text-transform: capitalize ;
+	margin: 0 ;
+}
+/* header line of arrival section : line */
+.arrivalClass  .arrivalContainerClass  .headerArrivalLine
+{
+	width: 100% ;
+	padding:1.5px ;
+	background-color: #bbb ;
+	margin: 0 ;
+}
+/* ********************** products container ********************** 	*/
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival
+{
+	width: 85% ;
+	height: auto ;
+	overflow: hidden ;
+	margin: 30px auto ;
+/*	border: 2px solid #f0f; */
+}
+/* ********************** common properities of 6 products  **********************  */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product
+{
+	/* total_width = width + marign_left + margin_right = 31.3333 + 1 + 1 = 33.3333%	*/
+	width: 31.3333%;
+	height: auto ;
+	float: left ;
+	margin: 1% ;
+	border: 3px solid #aaa;
+}
+/* ********************** common properities of image container of 6 products  **********************  */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont
+{
+	position: relative ;
+/*	border: 2px solid #ff0; 	*/
+	background-color: #ccc;
+	padding: 30px;
+}
+/* ********************** common properities of "overlay layer" of image 6 products  **********************  */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont .productOverlayArrival 
+{
+	position: absolute ;
+	top: 0 ;
+	left: 0 ;
+	width: 100% ;
+	height: 100% ;
+	/*   3 icons [ heart , shopping_cart , user ] عشان  اخفي ال */
+	overflow: hidden ;
+	cursor: pointer ;
+	background-color: rgba(0,0,0,0.3);
+	opacity:  0 ;
+	transition: 1s ease-in-out ;
+	/* تيجي في المنتصف overlay layer عشان العناصر اللي موجودة في ال	*/
+	text-align: center ;
+}
+/* ------------------------- when hover on product , the product overlay will apear ------------------------- */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont:hover .productOverlayArrival
+{
+	opacity:  1 ;
+}
+/* ********************** common properities of icons of "overlay layer" of image 6 products  **********************  */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont .productOverlayArrival a
+{
+	display: inline-block ;
+	background-color: #fff;
+	padding: 18px;
+	/*  overlay layer تكون منحرفة ناحية الشمال لما اشيل الفارة من علي ال icons عشان ال	*/
+	transform: translate(-50%,-50%);	
+	/* حجم كل ايقونة */
+	font-size: 25px ;
+	color: #000 ;
+	text-align: center ;
+	/*	تنزل من فوق لتحت hover عشان العناصر تكون خارج الاب بتاعها عشان لما اعمل  */
+	margin-top: -13% ;
+}
+/* ------------ heart icon ------------ */	
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont .productOverlayArrival
+a:nth-of-type(1)
+{
+	transition: 0.4s ease-in-out ;
+}
+/* ------------ heart icon : hover ------------ */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont .productOverlayArrival
+a:nth-of-type(1):hover
+{
+	color: #f00;
+}
+/* ------------ shopping-cart icon ------------ */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont .productOverlayArrival 
+a:nth-of-type(2)
+{
+	transition: 0.6s ease-in-out ;
+}
+/* ------------ shopping-cart icon :hover ------------ */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont .productOverlayArrival
+a:nth-of-type(2):hover
+{
+	color: #0f0;
+}
+/* ------------ user icon ------------ */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont .productOverlayArrival 
+a:nth-of-type(3)
+{
+	transition: 0.8s ease-in-out ;
+}
+/* ------------ user icon : hover ------------ */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont .productOverlayArrival
+a:nth-of-type(3):hover
+{
+	color: #00f;
+}
+/* ------------------------- when hover on box : [ heart,shoppng_cart,user] icons will fall ---------------------------- */
+/*  Y من فوق لتحت علي المحور الراسي heart icon هيزل ال hover لما اعمل  */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont:hover .productOverlayArrival a:nth-of-type(1) ,
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont:hover .productOverlayArrival a:nth-of-type(2) ,
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont:hover .productOverlayArrival a:nth-of-type(3)
+{
+	transform: translateY(180%);
+}
+/* ********************** common properities of <img> tag of 6 products  **********************  */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont img
+{
+	width: 100%;
+}
+/* ************** header of each product : h3 ************** */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  h3
+{
+	color: #2980B9 ;
+	font-size: 25px;
+	margin: 0 ;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	text-transform: capitalize ;	
+}
+/* ************** price of  each product  ************** */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct
+{
+	height: auto ;
+	overflow: hidden ;
+	border-top: 3px solid #ccc; 
+	padding-top: 5px ;	
+}
+/* ************** left part  :  price of product  **************  */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .priceNumber
+{
+	width: 58% ;
+	float: left ;
+	margin-left: 2% ;
+/*	border: 2px solid #f0f; */
+}
+/* ************** left part  :  price of product : current price **************  */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .priceNumber .currentPrice
+{
+	font-size: 23px;
+	color: #ff3300;
+	font-weight: bold ;
+}
+/* ************** left part  :  price of product : deleted price **************  */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .priceNumber .deletedPrice
+{
+	font-size: 18px;
+	text-decoration: line-through ;
+	margin-left: 7px ;
+	color: #666 ;
+	font-weight: bold ;
+}
+/* ************** right part  :  price of product  **************  */
+.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .rateOfProduct
+{
+	width: 38% ;
+	float: right;
+	margin-right: 2% ;
+	padding: 5px;
+	font-size: 17px ;
+	color: rgb(243,170,34);
+/*	border: 2px solid #ff0; */
+}
+
+/* ############################################## Responsive : navbar ############################################# */
+/* ------------- mobile screen -------------- */
+@media( min-width:0px) and ( max-width:664px)
+{
+	/* ********************** common properities of 6 products  **********************  */
+	.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product
+	{
+		/* total_width = width + marign_left + margin_right = 90 + 5 + 5 = 100%	*/
+		width: 90%;
+		float: none;
+		margin: 5% ;
+		margin-bottom: 50px;
+	}
+}
+/* ------------- tablet screen -------------- */
+@media( min-width:665px) and ( max-width:1000px)
+{
+	/* ********************** common properities of 6 products  **********************  */
+	.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product
+	{
+		/* total_width = width + marign_left + margin_right = 48 + 1 + 1 = 50%	*/
+		width: 48%;
+		margin: 1% ;
+		margin-bottom: 10px;
+	}
+	/* ************** left part  :  price of product : current price **************  */
+	.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .priceNumber .currentPrice
+	{
+		display: inline-block;
+		font-size: 25px;
+		margin-top: 10px;
+	}
+	/* ************** left part  :  price of product : deleted price **************  */
+	.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .priceNumber .deletedPrice
+	{
+		font-size: 18px;
+		font-weight: bold ;
+	}
+	/* ************** left part  :  price of product : current price **************  */
+	/* **************************** right part  :  price of product  **************  */
+	.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .priceNumber 	   ,
+	.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .rateOfProduct  
+	{
+		display: block;
+		width: 100% ;
+		float: none;	
+	}
+}
+/* ------------- tablet screen -------------- */
+@media( min-width:900px) and ( max-width:1178px)
+{
+	/* ************** left part  :  price of product container  **************  */
+	/* **************************** right part  : container of rate of product  **************  */
+	.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .priceNumber 	   ,
+	.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .rateOfProduct  
+	{
+		display: block;
+		width: 100% ;
+		float: none;	
+	}	
+}
+/* ****************************************** product gallery section ****************************************** */
+.productGalleryClass
+{
+/*	border: 2px solid #f00;*/
+	width: 100%; 
+	height: auto ;
+/*	overflow: hidden ;*/
+	background-color: #fff ;
+}
+.productGalleryClass .productGalleryContainer
+{
+/*	border: 2px solid #0f0;*/
+	width: 90%; 
+	height: auto ;
+	overflow: hidden ;
+	margin: 20px auto ;
+}
+/* --------------- header of product Gallery : h3  --------------- */
+.productGalleryClass .productGalleryContainer h3
+{
+	width: 300px ;
+	height: 60px;
+	font-size: 25px;
+	background-color: #2980B9 ;
+	border-top-right-radius: 50px ;	
+	padding-top: 15px; 
+	padding-bottom: 10px; 
+	padding-left: 50px; 
+	color: #fff ;
+	text-transform: capitalize ;
+	margin: 0 ;
+}
+/* header line of product Gallery section : line  */
+.productGalleryClass .productGalleryContainer .galleryHeaderLine
+{
+	width: 100% ;
+	padding:1.5px ;
+	background-color: #bbb ;
+	margin: 0 ;
+}
+.productGalleryClass .productGalleryContainer .productGalleryNavbarLinks				
+{
+	width: 90%;
+	height: auto;
+	overflow: hidden ;
+	margin: 5px auto ;
+/*	border: 2px solid #00f; */
+	text-align: center ;
+}
+.productGalleryClass .productGalleryContainer .labelGalleryContainer 
+{
+	text-align: center ;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.productGalleryClass .productGalleryContainer .labelGalleryContainer   label
+{
+	display: inline-block ;
+	width: 140px;
+	margin: 0.8% ;
+	background-color: #2980B9 ;
+	color: #fff;
+	font-weight: bold ;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	cursor: pointer ;
+	text-transform: capitalize ;
+	font-size: 20px;
+	transition: 0.4s ;
+}
+.productGalleryClass .productGalleryContainer .labelGalleryContainer   label.active
+{
+	background-color: darkorange ;
+}
+/* ************ product gallery blocks : All , Phone , Laptop , Headphone , Shoes ************** */
+.productGalleryClass .productGalleryContainer .productGalleryBlocks
+{
+	width: 100% ;
+	height: auto ;
+	overflow: hidden ;
+/*	border: 2px solid #ff0;*/
+}
+.productGalleryClass .productGalleryContainer .productGalleryBlocks ul
+{
+	width: 600% ;
+	height: auto;
+	overflow: hidden ;
+/*	border: 2px solid #f0f;*/
+	list-style: none ;
+	padding: 0 ;
+	/* في بداية الحركة ونهايتها smooth يتحرك بشكل  gallery navbar من ال link عشان لما اضغط علي اي */
+	transition: 2s ease-in-out ;
+}
+/* --- the style of 6 blocks of product gallery : each <li></li> of 6 <li></li> : : All , Phone , Laptop , Headphone , Shoes , watches ---*/
+.productGalleryClass .productGalleryContainer .productGalleryBlocks ul li
+{
+	/* total_width = 100 / 6 =  16.65%  , we have 6 <li></li>	*/
+	width: 16.65% ;
+	float: left ;
+	height: auto;
+	overflow: hidden ;
+/*	border: 2px solid #00f;*/
+}
+/*  /////////////////////////// product container : product 1 ///////////////////////////  */
+.productGalleryClass .productGalleryContainer .productGalleryBlocks ul li .productBlockContainer
+{	
+	/* total_width = 100 / 3 = 33.3333 % , we have 6 <li></li> , total_width = 31.3333+1+1=33.3333%	*/
+	width: 31.3333% ;
+	float: left ;
+	margin: 1% ;
+	height: auto ;
+	overflow: hidden ;
+	border: 2px solid  rgba(0,0,0,0.3);
+}
+/* ############################################ left part : image product container  ######################################### */
+.productGalleryClass .productGalleryContainer .productGalleryBlocks ul li .productImg
+{
+	width: 40% ;
+	float: left ;
+	height: 110px;
+/*	border: 2px solid #0f0;*/
+	padding: 10px ;
+	background-color: #f0f0f0 ;
+	transition: 0.8s  ;
+}
+.productGalleryClass .productGalleryContainer .productGalleryBlocks ul li .productImg:hover
+{
+	background-color: #111;
+	cursor: pointer ;
+}
+.productGalleryClass .productGalleryContainer .productGalleryBlocks ul li .productImg  img
+{
+/*	border: 2px solid #0ff;*/
+	width: 100% ;
+	height: 100%;
+}
+/* ############################################ right part : product info container ######################################### */
+.productGalleryClass .productGalleryContainer .productGalleryBlocks ul li  .productInfo
+{
+	width: 60%;
+	float: left;
+	height: 110px;
+/*	border: 2px solid #ff0;	*/
+}
+/* ########### right part : paragraph of right part of product info container   ########### */
+.productGalleryClass .productGalleryContainer .productGalleryBlocks ul li  .productInfo p
+{
+	font-size: 25px ;
+	font-weight: bold ;
+	color: #2980B9 ;
+	margin-top: 10px ;
+	margin-bottom: 10px ;
+	padding-left: 5px;
+	text-transform: capitalize ;
+}
+/* ########### right part : line under header of product info container   ########### */
+.productGalleryClass .productGalleryContainer .productGalleryBlocks ul li  .productInfo .productRightPartLine
+{
+	width: 100% ;
+	height: 2px ;
+	background-color: #ccc ;
+	padding: 1px ;
+}
+/* ########### price num and rate container  ########### */
+.productGalleryClass .productGalleryContainer .productGalleryBlocks ul li  .productInfo .productPriceAndRateContainer
+{
+	width: 100% ;
+	height: auto ;
+	overflow: hidden ;
+/*	border: 2px solid #f0f;	*/
+	margin-top: 10px ;
+	margin-bottom: 15px ;
+	padding-left: 5px;
+}
+/* ########### left part : product price Num :  right part : info of product   ########### */
+.productGalleryClass .productGalleryContainer .productGalleryBlocks ul li  .productInfo .productPriceAndRateContainer .priceNumContainer
+{
+	width: 40% ;
+	float: left ;
+/*	border: 2px solid #0ff;	*/
+	font-size: 20px;
+	color: #f00;
+	font-weight: bold ;
+}
+/* ########### right part : product rate :  right part : info of product  ########### */
+.productGalleryClass .productGalleryContainer .productGalleryBlocks ul li  .productInfo .productPriceAndRateContainer .productPricericeVal
+{
+	width: 60% ;
+	height: auto; 
+	float: right;
+	text-align: right ;
+/*	border: 2px solid #00f;*/
+	padding-top: 2.4px ;
+	padding-bottom: 2.4px ;
+	padding-right: 10px;
+}
+/* ########### star icons : right part : product rate :  right part : info of product  ########### */
+.productGalleryClass .productGalleryContainer .productGalleryBlocks ul li  .productInfo .productPriceAndRateContainer .productPricericeVal  i
+{
+	font-size: 15px;
+	color: orange ;
+}
+.productGalleryClass .productGalleryContainer  .productGalleryNavbarLinks .radioBtnContainer input
+{
+	display: none ;
+}
+#radioAllId:checked			~ .labelGalleryContainer	#link1Id ,
+#radioPhoneId:checked 		~ .labelGalleryContainer	#link2Id ,
+#radioLaptopId:checked	 	~ .labelGalleryContainer 	#link3Id ,
+#radioHeadPhoneId:checked 	~ .labelGalleryContainer 	#link4Id ,
+#radioShoesId:checked 		~ .labelGalleryContainer	#link5Id 
+{
+	background-color: #f0f ;
+}
+.productGalleryClass .productGalleryContainer .labelGalleryContainer label:hover
+{
+	cursor: pointer;
+	letter-spacing: 1.5px ;
+	background-color: darkorange ;
+}
+
+/* ############################################## Responsive : product Gallery ############################################# */
+@media( min-width:0px) and (max-width:680px)
+{
+	/*  /////////////////////////// product container : product 1 ///////////////////////////  */
+	.productGalleryClass .productGalleryContainer .productGalleryBlocks ul li .productBlockContainer
+	{
+		/* total_width = 100 / 3 = 33.3333 % , we have 6 <li></li> , total_width = 31.3333+1+1=33.3333%	*/
+		width: 90% ;
+		float: none ;
+		margin: 5% ;
+/*		border: 2px solid #000;*/
+	}	
+}
+@media( min-width:681px) and (max-width:1156px)
+{
+	/*  /////////////////////////// product container : product 1 ///////////////////////////  */
+	.productGalleryClass .productGalleryContainer .productGalleryBlocks ul li .productBlockContainer
+	{
+		/* total_width = 100 / 3 = 33.3333 % , we have 6 <li></li> , total_width = 31.3333+1+1=33.3333%	*/
+		width: 48% ;
+		margin: 1% ;
+/*		border: 2px solid #000;*/
+	}	
+	/* ########### left part : product price Num :  right part : info of product   ########### */
+	.productGalleryClass .productGalleryContainer .productGalleryBlocks ul li  .productInfo .productPriceAndRateContainer .priceNumContainer
+	{
+		width: 40% ;
+		float: left;
+/*		border: 2px solid #0ff;	*/
+	}
+	/* ########### right part : product rate :  right part : info of product  ########### */
+	.productGalleryClass .productGalleryContainer .productGalleryBlocks ul li  .productInfo .productPriceAndRateContainer .productPricericeVal
+	{
+		
+		width: 60% ;
+		float: right;
+/*		border: 2px solid #0ff;	*/
+	}
+}
+
+/* ************************************************** Featured Product section ********************************************** */
+.featuredProduct
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+/*	border: 2px solid #f00;*/
+}
+.featuredProduct  .featuredProductContainer
+{
+	width: 90%;
+	height: auto;
+	overflow: hidden;
+	margin: 10px auto ;
+/*	border: 2px solid #00f;*/
+}
+.featuredProduct  .featuredProductContainer  h3
+{
+	width: 300px;
+    height: 60px;
+    font-size: 25px;
+    background-color: #2980B9;
+    border-top-right-radius: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0;
+}
+.featuredProduct  .featuredProductContainer  .featuredProductLine
+{
+	width: 100% ;
+	padding:1.5px ;
+	background-color: #bbb ;
+	margin: 0 ;
+}
+/* ******************* Featured Product gallery ******************* */
+.featuredProduct  .featuredProductContainer  .featuredProductGallery
+{
+	width: 98%;
+	height: auto ;
+	overflow: hidden; 
+	margin: 1% ;
+	padding: 0px;
+	margin-top: 50px;
+	border-radius: 20px;
+	/* border: 2px solid #0ff ;  */
+	box-shadow:  1px  1px 10px #555,
+				-1px -1px 10px #555 ,
+				 1px -1px 10px #555 ,
+				-1px -1px 10px #555 ;
+}
+/* ************************* left part : big image ************************* */
+.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer
+{
+	/* total_width = width + margin_left + margin_right = 48+1+1=50 	*/
+	width: 58% ;
+	margin: 1% ;
+	float: left ;
+	height: auto ;
+	/* overflow: hidden ; */
+	/* border: 2px solid #f0f ;  */
+	padding: 65px 20px ;
+}
+/* --------- left part : left part : big image container --------- */
+.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer .featuredProductBigImgContainer  
+{
+	width: 78% ;
+	margin: 1% ;
+	height: 480px ;
+	float: left ;
+	margin-right: 20px ;
+/*	border: 2px solid #00f ;*/
+	box-shadow:  1px  1px 10px #555,
+				-1px -1px 10px #555 ,
+				 1px -1px 10px #555 ,
+				-1px -1px 10px #555 ;
+}
+.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer .featuredProductBigImgContainer  img
+{
+	width: 100% ;
+	height: 480px ;
+}
+/* ************************* left part : image icon : 5 image icon بتاع كل container هذا هو ال ************************* */
+.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer .featuredProductImgIconsContainer
+{
+	width: 17%;
+	margin-top: 3px ;
+	height: 495px ;
+	float: left;
+/*	border: 2px solid #0f0 ;*/
+}
+/* ---------------- left part : right part : subImages-icons container : image icon بتاع كل container هذا هو ال ---------------- */
+.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer .featuredProductImgIconsContainer .subImagesIconClass
+{
+	width: 100%;
+	margin-bottom: 18% ;
+	padding: 10px;
+	border: 3px solid #666 ;	
+	cursor: pointer ;
+	transition: 0.4s ease-in-out ;
+}
+.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer .featuredProductImgIconsContainer .subImagesIconClass img
+{
+	/*  smooth يحصل بشكل img علي ال event عشان لو حصل اي */
+	transition: 0.2s ease-in-out ;
+}
+/* نفسها بحيث ان الصورة كانها بتبعد وتدخل لداخل الاطار  <img> لل padding هيعمل five icons من ال icon لما احط الفارة علي الي */
+.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer .featuredProductImgIconsContainer .subImagesIconClass:hover img
+{
+	padding: 5px;
+}
+.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer .featuredProductImgIconsContainer .subImagesIconClass.active
+{
+	border: 3px solid #f00 ;	
+}
+.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgIconsContainer .subImagesIconClass img
+{
+	width: 100% ;
+}
+/*  ************************* right part : image info *************************  */
+.featuredProduct .featuredProductContainer .rightPartImageInfo
+{
+	width: 38% ;
+	margin: 1% ;
+	float: left ;
+	height: auto ;
+	overflow: hidden ;
+/*	border: 2px solid #f00 ;*/
+}
+/* ************************* right part : image info : <ul></ul> *************************  */
+.featuredProduct .featuredProductContainer .rightPartImageInfo ul
+{
+	width: 500% ;
+	height: auto ;
+	overflow: hidden ;
+/*	border: 2px solid #0ff;*/
+	list-style: none ;
+	margin: 0 ;
+	padding: 0 ;
+	transition: 1s ease-in-out ;
+}
+/* ************************* right part : image info : <li></li> *************************  */
+.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li
+{
+	/* total_width = width + margin-left = 19 + 1 = 20%  */
+	width: 19% ;
+	float: left ;
+	margin-left: 1% ;
+	margin-top: 6% ;
+	margin-bottom: 6% ;
+}
+/* ************************* right part : image info : <h4></h4> *************************  */
+.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li  .rightPartImageInfoH4
+{
+	font-size: 40px;
+	text-transform: capitalize ;
+	margin-top: 0px ;
+	margin-bottom: 20px ;
+}
+/* ************************* right part : image info : <div> <i></i> </div> *************************  */
+.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li  .rateOfFeaturedProduct  
+{
+	font-size: 23px;
+	color: #666 ;
+}
+.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li  .rateOfFeaturedProduct  i
+{
+	color: orange ;
+}
+/* ************************* right part : image info : <div> <p></p> </div> *************************  */
+.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li    .rightPartImageInfoPara
+{
+	font-size: 20px; 
+	color: #333 ;
+}
+/* ************************* right part : image info : left part : price : real and deleted price *************************  */
+.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li  .rateAndPriceOfFeaturedProduct .priceOfFeaturedProduct
+{
+	width: 55% ;
+	margin-top:10px ;
+	float: left ;
+/*	border: 2px solid #0f0;*/
+}
+/* ************************* right part : image info : real price *************************  */
+.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li  .rateAndPriceOfFeaturedProduct  span.realPriceFeaturedProduct
+{
+	font-weight: bold ;
+	color: #ff3300 ;	
+	font-size: 35px; 
+}
+/* ************************* right part : image info : delete price *************************  */
+.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li  .rateAndPriceOfFeaturedProduct  span.deletedPriceFeaturedProduct
+{
+	color: #666 ;	
+	font-size: 25px; 
+	text-decoration: line-through ;
+	font-weight: bold ;
+}
+.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li .rateAndPriceOfFeaturedProduct .buyNowBtnFeaturedProduct
+{
+	width: 38%; 
+	float: left;
+	margin: 1% ;
+/*	border: 2px solid #f00;*/
+	padding: 0 ;
+}
+
+/* ************************* right part : image info : "buy now" button *************************  */
+.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li .rateAndPriceOfFeaturedProduct .buyNowBtnFeaturedProduct .buyNowBtn
+{
+	width: 100%; 
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 25px;
+	cursor: pointer ;
+	color: #fff ;
+	text-transform: capitalize ;
+	background-color: #2980B9 ;
+	border: 0 ; 
+	outline: 0 ;
+	transition: 0.2s ease-in-out ;
+}
+.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li .rateAndPriceOfFeaturedProduct .buyNowBtnFeaturedProduct .buyNowBtn:hover
+{
+	letter-spacing: 2px ;
+}
+/* /////////////////////////////////////////////// Reponsive /////////////////////////////////////////////// */
+@media(min-width:0px) and (max-width:899px)
+{
+	/* ************************* left part : big image ************************* */
+	.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer , 
+	/* ************************* right part : image info *************************  */
+	.featuredProduct .featuredProductContainer .rightPartImageInfo
+	{
+		width: 80%;
+		height: auto;
+		margin-top: 1% ;
+		margin-bottom: 1% ;
+		margin-left: 10% ;
+		margin-right: 10% ;
+		float: none ;
+	}
+	/* --------- left part : left part : big image container --------- */
+	.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer .featuredProductBigImgContainer
+	{
+		width: 100% ;
+		height: auto ;
+		float: none;
+	}
+	.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer .featuredProductBigImgContainer img
+	{
+		width: 100%;
+		height: auto ;
+		overflow: hidden ;
+	}
+	/* ************************* left part : image icon : 5 image icon بتاع كل container هذا هو ال ************************* */
+	.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer .featuredProductImgIconsContainer
+	{
+		width: 100%;
+		height: auto;
+		float: none;
+		margin-top: 5% ;
+/*		border: 2px solid #0f0 ;*/
+		text-align: center ;
+	}
+	/* ---------------- left part : right part : subImages-icons container  ---------------- */
+	.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer .featuredProductImgIconsContainer .subImagesIconClass
+	{
+		width: 16.7%;
+		display: inline-block ;
+		margin:1% ;
+	}
+	/* ************************* right part : image info : <li></li> *************************  */
+	.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li
+	{
+		/* total_width = width + margin-left = 19 + 1 = 20%  */
+		width: 19% ;
+		float: left ;
+		margin-left: 1% ;
+		margin-top: 1% ;
+		margin-bottom:1% ;
+	}
+	/* ************************* right part : image info : <h4></h4> *************************  */
+	.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li  .rightPartImageInfoH4
+	{
+		font-size: 35px;
+	}
+	/* ************************* right part : image info : <div> <i></i> </div> *************************  */
+	.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li  .rateOfFeaturedProduct  
+	{
+		font-size: 20px;
+	}
+	/* ************************* right part : image info : <div> <p></p> </div> *************************  */
+	.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li    .rightPartImageInfoPara
+	{
+		font-size: 18px; 
+	}
+	/* ************************* right part : image info : real price *************************  */
+	.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li  .rateAndPriceOfFeaturedProduct  span.realPriceFeaturedProduct
+	{	
+		font-size: 22px; 
+	}
+	/* ************************* right part : image info : delete price *************************  */
+	.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li  .rateAndPriceOfFeaturedProduct  span.deletedPriceFeaturedProduct
+	{
+		font-size: 20px; 
+	}
+	.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li .rateAndPriceOfFeaturedProduct .buyNowBtnFeaturedProduct
+	{
+		width: 38%; 
+/*		border: 2px solid #f00;*/
+	}
+	/* ************************* right part : image info : "buy now" button *************************  */
+	.featuredProduct .featuredProductContainer .rightPartImageInfo ul  li .rateAndPriceOfFeaturedProduct .buyNowBtnFeaturedProduct .buyNowBtn
+	{
+		font-size: 20px;
+	}
+}
+@media(min-width:900px) and (max-width:1090px)
+{
+	/* ************************* left part : big image and icons  ************************* */
+	.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer 
+	{
+		width: 100%;
+		height: auto;
+		float: left;
+/*		border: 2px solid #00f;*/
+	}
+	/* ************************* left part : image icon : each icon in 5 image icon   ************************* */
+	.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer .featuredProductImgIconsContainer
+	{
+		width: 10%;
+		height: auto;
+		float: right;
+		margin-bottom: 0%;
+/*		border: 2px solid #0f0 ;*/
+	}
+	/* ************************* right part : image info *************************  */
+	.featuredProduct .featuredProductContainer .rightPartImageInfo
+	{
+		width: 100%;
+		height: auto;
+		float: left;
+/*		border: 2px solid #0ff;*/
+	}
+	/* ************************* right part : image info : <li></li> *************************  */
+	.featuredProduct .featuredProductContainer .rightPartImageInfo ul li
+	{
+		margin-left: 1% ;
+		margin-top: 0% ;
+		margin-bottom:0% ;
+	}
+	/* --------- left part : left part : big image container --------- */
+	.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer .featuredProductBigImgContainer
+	{
+		width: 70% ;
+/*		border: 2px solid #f0f;*/
+		margin-top:0% ;
+		margin-right: 1% ;
+		height: auto;
+		float: left;
+	}
+	.featuredProduct  .featuredProductContainer  .featuredProductGallery  .featuredProductImgContainer .featuredProductBigImgContainer img
+	{
+		width: 100%;
+		height: auto;
+		overflow: hidden ;
+	}
+}
+/* ************************************************** best deals section ************************************** */
+.bestDeals
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+/*	border: 2px solid #f00;*/
+	margin-top: 20px;
+}
+.bestDeals .bestDealsContainer
+{
+	width: 90%;
+	height: auto;
+	overflow: hidden;
+	margin: 10px auto ;
+/*	border: 2px solid #00f;*/
+}
+.bestDeals .bestDealsContainer  h3
+{
+	width: 300px;
+    height: 60px;
+    font-size: 25px;
+    background-color: #2980B9;
+    border-top-right-radius: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0;
+}
+.bestDeals .bestDealsContainer .bestDealsLine
+{
+	width: 100% ;
+	padding:1.5px ;
+	background-color: #bbb ;
+	margin: 0 ;
+}
+/* ############################## row 1 : two parts : Latest Laptop && New Headphone ############################## */
+/* /////////////////////////// common features /////////////////////////// */
+/* -------- left part --------  */
+.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass ,
+/* -------- right part --------  */
+.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass
+{
+	border-radius: 20px ;
+	margin-top: 2.5% ;
+	float: left ;
+	height: 300px ;
+	overflow: hidden;
+/*	border: 2px solid #0f0;*/
+	position: relative ;
+	height: 300px ;
+	overflow: hidden ;	
+	background-repeat: no-repeat ;
+	background-size: cover ;
+	background-position: center ;
+}
+/* -------- left part  --------  */
+.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass 
+{
+	width: 48.5% ;
+	margin-right: 1.5% ;
+	background-image: url("images/home_img3.jpg");
+}
+/* -------- right part  --------  */
+.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass
+{
+	width: 48.5% ;
+	margin-left: 1.5% ;
+	background-image: url("images/deal2.jpg");
+}
+/* -------- left part  : container of h4 , p  -------- */
+/* -------- right part : container of h4 , p  -------- */
+.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer ,
+.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer 
+{
+	position: absolute;
+	width:80%;
+	top: 25%;
+	left: 5% ;
+/*	border: 2px solid #00f; */
+}
+/* -------- left part  : h4  -------- */
+/* -------- right part : h4  -------- */
+.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer .leatestLaptopH4 ,
+.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer  .newHeadphoneH4
+{
+	font-size: 40px;
+	text-transform: capitalize ;
+	color: #fff;
+	margin: 0 ;
+}
+/* -------- left part   :  paragraph  -------- */
+/* -------- right part  :  paragraph  -------- */
+.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer .leatestLaptopPara ,
+.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer  .newHeadphonePara
+{
+	font-size: 23px;
+	text-transform: capitalize ;
+	color: #fff;
+}
+/* -------- left part   :  button  -------- */
+/* -------- right part  :  button  -------- */
+.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer .leatestLaptopBtn ,
+.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer  .newHeadphoneBtn
+{
+	width: 35% ; 
+	height: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color:#2980B9 ;
+	color: #fff;
+	text-transform: capitalize ;
+	font-size: 25px; 
+	cursor: pointer ;
+	border: 0 ;
+	outline: 0 ;
+	transition: 0.3s ease-in-out ;
+}
+/* -------- left part   :  button : hover  -------- */
+/* -------- right part  :  button : hover   -------- */
+.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer .leatestLaptopBtn:hover ,
+.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer  .newHeadphoneBtn:hover
+{
+	letter-spacing: 2px ;
+	background-color:rgba(41,128,185,0.5) ;
+}
+/* ############################## row 2 : fast Delivery && support && easy Payment ############################## */
+.bestDealsBox2
+{
+/*	border: 2px solid #ff0;*/
+	/*	left or right سواء كان float عشان الغي تاثير ال */
+	clear: both ;
+}
+/* /////////////////////////// common features /////////////////////////// */
+/* -------- fast Delivery part --------  */
+.bestDealsBox2 .fastDeliveryClass 	, 
+/* -------- support part --------------  */
+.bestDealsBox2 .supportClass 		,
+/* -------- easy Payments part --------  */
+.bestDealsBox2 .easyPaymentsClass
+{
+	width: 31.3333%;
+	margin: 1% ;
+	float: left ;
+	border: 2px solid #2980B9 ;
+	text-align: center ;
+}
+/* --------------- 10 Days Replacements part -------------------- */
+.bestDealsBox2  .replacementClass
+{
+	width: 98%;
+	margin-top: 5% ;
+	margin-bottom: 2% ;
+	margin-left: 1% ;
+	margin-right: 1% ;
+	/*	left or right سواء كان float عشان الغي تاثير ال */
+	clear: both ;
+	border: 2px solid #2980B9 ;
+	text-align: center ;
+}
+/* /////////////////////////// common features /////////////////////////// */
+/* --------------- h4 ---------------------- */
+.bestDealsBox2  .fastDeliveryClass  .fastDeliveryContainer  .fastDeliveryH4 ,
+.bestDealsBox2  .supportClass 		.supportContainer 	    .supportH4 	    ,
+.bestDealsBox2  .easyPaymentsClass  .easyPaymentsContainer  .easyPaymentsH4 ,
+.bestDealsBox2  .replacementClass   .replacementContainer   .replacementH4 
+{
+	font-size: 25px ;
+	margin-top: 10px ;
+	margin-bottom:  10px ;
+	color: #333 ;
+}
+/* --------------- p ---------------------- */
+.bestDealsBox2  .fastDeliveryClass  .fastDeliveryContainer  .fastDeliveryPara ,
+.bestDealsBox2  .supportClass 		.supportContainer 	    .supportPara 	    ,
+.bestDealsBox2  .easyPaymentsClass  .easyPaymentsContainer  .easyPaymentsPara ,
+.bestDealsBox2  .replacementClass   .replacementContainer   .replacementPara 
+{
+	font-size: 18px ;
+	line-height: 1.5 ;
+	color: #666 ;
+	padding-left: 10px ;
+	padding-right: 10px ;
+}
+/* /////////////////////////////////////////////// Reponsive /////////////////////////////////////////////// */
+@media(min-width:0px) and (max-width:700px)
+{
+	.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass
+	{
+		margin-top: 30px ;
+	}
+	/* ############################## row 1 : two parts : Latest Laptop && New Headphone ############################## */
+	/* /////////////////////////// common features /////////////////////////// */
+	/* -------- left part --------  */
+	.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass ,
+	/* -------- right part --------  */
+	.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass
+	{
+		width: 98%; 
+		margin-left: 1% ;
+		margin-right: 1% ;
+		height: 300px;
+	}
+	/* -------- left part  : h4  -------- */
+	/* -------- right part : h4  -------- */
+	.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer .leatestLaptopH4 ,
+	.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer  .newHeadphoneH4
+	{
+		font-size: 35px;
+	}
+	/* -------- left part   :  paragraph  -------- */
+	/* -------- right part  :  paragraph  -------- */
+	.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer .leatestLaptopPara ,
+	.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer  .newHeadphonePara
+	{
+		font-size: 20px;
+	}
+	/* ############################## row 2 : fast Delivery && support && easy Payment ############################## */
+	/* /////////////////////////// common features /////////////////////////// */
+	/* -------- fast Delivery part --------  */
+	.bestDealsBox2 .fastDeliveryClass 	, 
+	/* -------- support part --------------  */
+	.bestDealsBox2 .supportClass 		,
+	/* -------- easy Payments part --------  */
+	.bestDealsBox2 .easyPaymentsClass   ,
+	/* --------------- 10 Days Replacements part -------------------- */
+	.bestDealsBox2  .replacementClass
+	{
+		width: 96%;
+		margin: 2% ;
+		border: 2px solid #2980B9 ;
+/*		text-align: center ;*/
+	}	
+}
+@media(min-width:701px) and (max-width:1030px)
+{
+	.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass
+	{
+		margin-top: 30px ;
+	}
+	/* ############################## row 1 : two parts : Latest Laptop && New Headphone ############################## */
+	/* /////////////////////////// common features /////////////////////////// */
+	/* -------- left part --------  */
+	.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass ,
+	/* -------- right part --------  */
+	.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass
+	{
+		width: 98%; 
+		margin: 1% ;
+		height: 250px;
+	}
+	/* -------- left part  : h4  -------- */
+	/* -------- right part : h4  -------- */
+	.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer .leatestLaptopH4 ,
+	.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer  .newHeadphoneH4
+	{
+		font-size: 35px;
+	}
+	/* -------- left part   :  paragraph  -------- */
+	/* -------- right part  :  paragraph  -------- */
+	.bestDeals .bestDealsContainer  .bestDealsBox1 .leatestLaptopClass .leatestLaptopContainer .leatestLaptopPara ,
+	.bestDeals .bestDealsContainer  .bestDealsBox1 .newHeadphoneClass  .newHeadphoneContainer  .newHeadphonePara
+	{
+		font-size: 22px;
+	}
+/* ############################## row 2 : fast Delivery && support && easy Payment ############################## */
+	/* /////////////////////////// common features /////////////////////////// */
+	/* -------- fast Delivery part --------  */
+	.bestDealsBox2 .fastDeliveryClass 	, 
+	/* -------- support part --------------  */
+	.bestDealsBox2 .supportClass 		,
+	/* -------- easy Payments part --------  */
+	.bestDealsBox2 .easyPaymentsClass   ,
+	/* --------------- 10 Days Replacements part -------------------- */
+	.bestDealsBox2  .replacementClass
+	{
+		width: 48%;
+		margin: 1% ;
+		display: inline-block ;
+		border: 2px solid #2980B9 ;
+/*		text-align: center ;*/
+	}
+	/* /////////////////////////// common features /////////////////////////// */
+	/* --------------- h4 ---------------------- */
+	.bestDealsBox2  .fastDeliveryClass  .fastDeliveryContainer  .fastDeliveryH4 ,
+	.bestDealsBox2  .supportClass 		.supportContainer 	    .supportH4 	    ,
+	.bestDealsBox2  .easyPaymentsClass  .easyPaymentsContainer  .easyPaymentsH4 ,
+	.bestDealsBox2  .replacementClass   .replacementContainer   .replacementH4 
+	{
+		font-size: 20px ;	
+	}
+	/* --------------- p ---------------------- */
+	.bestDealsBox2  .fastDeliveryClass  .fastDeliveryContainer  .fastDeliveryPara ,
+	.bestDealsBox2  .supportClass 		.supportContainer 	    .supportPara 	    ,
+	.bestDealsBox2  .easyPaymentsClass  .easyPaymentsContainer  .easyPaymentsPara ,
+	.bestDealsBox2  .replacementClass   .replacementContainer   .replacementPara 
+	{
+		font-size: 15px ;
+	}
+}
+/* ************************************************** newLetter section ************************************** */
+.newsLetter
+{
+/*	border: 2px solid #f00;*/
+	width: 100%;
+	height: auto ;
+	overflow: hidden ;
+	background-color: #2980b9 ;
+	margin-bottom: 20px ;
+}
+.newsLetter .newsLetterContainer
+{
+/*	border: 2px solid #f0f;*/
+	width: 90%;
+	height: auto ;
+	overflow: hidden ;
+	margin: 10px auto ;
+	padding-bottom: 10px ;
+}
+.newsLetter  .newsLetterH5
+{
+	font-size: 45px ;
+	margin-top: 15px ;
+	margin-bottom: 5px ;
+	text-transform: capitalize ;
+	color: #fff ;
+	text-align: center ;
+}
+.newsLetter .newsLetterPara
+{
+	font-size: 22px ;
+	color: #fff ;
+	margin-top: 8px ;
+	margin-bottom: 10px ;
+	text-align: center ;
+}
+/* ---------- email field and submit button container ---------- */
+.newsLetter  .emailFieldAndBtnContainer
+{
+	width: 650px;
+	height: auto ;
+	overflow: hidden ;
+	display: block ;
+	margin: 15px auto ;
+	border-radius: 30px ;
+	background-color: rgba(0,0,0,0.3) ;
+}
+/* ---------- email field container ---------- */
+.newsLetter  .emailFieldAndBtnContainer .emailFieldContainer
+{
+	/* total_width = width + margin_left + margin_right = 71 + 1 + 1 = 73%	*/
+	width: 71%;
+	float: left ;
+/*	border: 2px solid #f00; */
+	margin: 1% ;
+	border: 0 ;
+}
+/* ---------- email field container ---------- */
+.newsLetter  .emailFieldAndBtnContainer .emailFieldContainer input[type=email]
+{
+	width: 100% ;
+	padding-top: 10px ;
+	padding-left: 15px ;
+	background-color: transparent ;
+	border: 0 ;
+	outline: 0 ;
+	color: #fff ;
+	font-size: 20px ;
+}
+.newsLetter  .emailFieldAndBtnContainer .emailFieldContainer input[type=email]::-webkit-input-placeholder
+{
+	text-transform: capitalize ;
+	font-size: 20px ;
+}
+/* ---------- submit button container ---------- */
+.newsLetter  .emailFieldAndBtnContainer .submitContainer
+{
+	/* total_width = width + margin-right = 25 + 2 = 27%	*/
+	width: 25%;
+	margin-top: 1% ;
+	margin-bottom: 1% ;
+	margin-right: 2% ;
+	float: right;
+/*	border: 2px solid #0f0;*/
+	text-align: right;
+	border-radius: 50px ;
+}
+/* ---------- submit button container ---------- */
+.newsLetter  .emailFieldAndBtnContainer .submitContainer input[type=submit]
+{
+	width: 100% ;
+	padding: 9px ;	
+	border-radius: 50px ;
+	border: 0 ;
+	outline: 0 ;
+	font-size: 20px ;
+	background-color: #2980b9 ;
+	color: #fff ;
+	text-transform: capitalize ;
+	cursor: pointer ;
+}
+/* /////////////////////////////////////////////// Reponsive /////////////////////////////////////////////// */
+@media(min-width:0px) and (max-width:750px)
+{
+	.newsLetter  .newsLetterH5
+	{
+		font-size: 35px ;
+	}
+	.newsLetter .newsLetterPara
+	{
+		font-size: 17px ;
+	}
+	/* ---------- email field and submit button container ---------- */
+	.newsLetter  .emailFieldAndBtnContainer
+	{
+		width: 425px;
+	}
+	/* ---------- email field container ---------- */
+	.newsLetter  .emailFieldAndBtnContainer .emailFieldContainer input[type=email]   ,
+	.newsLetter  .emailFieldAndBtnContainer .emailFieldContainer input[type=email]::-webkit-input-placeholder
+	{
+		font-size: 18px ;
+	}
+}
+/* ************************************************** footer section ************************************* */
+.footer
+{
+	width: 100% ;
+	height: auto ;
+	overflow: hidden ;
+/*	border: 2px solid #f00;*/
+}
+.footer  .footerContainer
+{
+	width: 90% ;
+	height: auto ;
+	overflow: hidden ;
+/*	border: 2px solid #0f0;*/
+	margin: 20px auto ;
+}
+.footer  .footerContainer .footerUl
+{
+	list-style: none ;
+	padding: 0 ;
+}
+.footer  .footerContainer .footerUl  .shoppingLi  ,
+.footer  .footerContainer .footerUl  .linksLi	  , 
+.footer  .footerContainer .footerUl  .ContactUsLi
+{
+/*	border: 2px solid #0ff;*/
+}
+/* ---------------  first <li></li> ------------------ */
+.footer  .footerContainer .footerUl  .shoppingLi 
+{
+	width: 39%;
+	float: left ;
+	margin-right: 2% ;
+}
+/* ---------------  second <li></li> ------------------ */
+.footer  .footerContainer .footerUl  .linksLi	 
+{
+	width: 15% ;
+	float: left ;
+	text-align: center ;
+	margin-left:  1% ;
+	margin-right: 1% ;
+}
+/* ---------------  third <li></li> ------------------ */
+.footer  .footerContainer .footerUl  .ContactUsLi
+{
+	width: 39% ;
+	float: right;
+	margin-left: 2% ;
+}
+/* -------------- h5 of 3<li></li> ------------------- */
+.footer  .footerContainer .footerUl  .shoppingLi  .footer1H5 ,
+.footer  .footerContainer .footerUl  .linksLi	  .footer2H5 , 
+.footer  .footerContainer .footerUl  .ContactUsLi .footer3H5
+{
+	font-size: 30px;
+	text-transform: capitalize; 
+	margin: 0 ;
+}
+/* -------------- h5 of Links and Contact Us and shooping bag icon ------------------- */
+.footer  .footerContainer .footerUl  .shoppingLi  .footer1H5  i  ,
+.footer  .footerContainer .footerUl  .linksLi	  .footer2H5 , 
+.footer  .footerContainer .footerUl  .ContactUsLi .footer3H5
+{
+	color: #2980b9 ;
+}
+/* -------------- <p></p> of shopping link ------------------- */
+.footer  .footerContainer .footerUl  .shoppingLi  .footerPara 
+{
+	font-size:18px;
+	line-height: 1.5 ;
+	color: #666 ;
+}
+/* -------------- paragraph of second <li></li> : links of footer ------------------- */
+.footer  .footerContainer .footerUl  .linksLi .homeLink    ,
+.footer  .footerContainer .footerUl  .linksLi .arrivalLink ,
+.footer  .footerContainer .footerUl  .linksLi .featuredink ,
+.footer  .footerContainer .footerUl  .linksLi .galleryLink ,
+.footer  .footerContainer .footerUl  .linksLi .dealLink
+{
+	font-size: 22px;
+	transition: 2s ease-in-out ;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+/* -------------- <a></a> of paragraph of second <li></li> : links of footer ------------------- */
+.footer  .footerContainer .footerUl  .linksLi .homeLink     a ,
+.footer  .footerContainer .footerUl  .linksLi .arrivalLink  a ,
+.footer  .footerContainer .footerUl  .linksLi .featuredink  a ,
+.footer  .footerContainer .footerUl  .linksLi .galleryLink  a ,
+.footer  .footerContainer .footerUl  .linksLi .dealLink  	a
+{
+	text-decoration: none ;
+	color: #555 ;
+	text-transform: capitalize ;
+}
+/* -------------- <a></a> of paragraph of second <li></li> : links of footer ------------------- */
+.footer  .footerContainer .footerUl  .linksLi .homeLink     a:hover ,
+.footer  .footerContainer .footerUl  .linksLi .arrivalLink  a:hover ,
+.footer  .footerContainer .footerUl  .linksLi .featuredink  a:hover ,
+.footer  .footerContainer .footerUl  .linksLi .galleryLink  a:hover ,
+.footer  .footerContainer .footerUl  .linksLi .dealLink  	a:hover
+{
+	text-decoration: underline ;
+}
+/* -------------- paragraph of third <li></li> : contact us of footer ------------------- */
+.footer  .footerContainer .footerUl  .ContactUsLi .footerAddress  ,
+.footer  .footerContainer .footerUl  .ContactUsLi .footerCall  ,
+.footer  .footerContainer .footerUl  .ContactUsLi .footerMessage  
+{
+	font-size: 18px;
+	color: #555 ;
+}
+/* -------------- <i></i> icons of paragraph of third <li></li> : contact us of footer ------------------- */
+.footer  .footerContainer .footerUl  .ContactUsLi .footerAddress  i ,
+.footer  .footerContainer .footerUl  .ContactUsLi .footerCall 	  i ,
+.footer  .footerContainer .footerUl  .ContactUsLi .footerMessage  i
+{
+	color: #2980b9 ;
+}
+/* /////////////////////////////////////////////// Reponsive /////////////////////////////////////////////// */
+@media(min-width:0px) and (max-width:610px)
+{
+	/* ---------------  first <li></li> ------------------ */
+	.footer  .footerContainer .footerUl  .shoppingLi  ,
+	/* ---------------  second <li></li> ------------------ */
+	.footer  .footerContainer .footerUl  .linksLi	,
+	/* ---------------  third <li></li> ------------------ */
+	.footer  .footerContainer .footerUl  .ContactUsLi
+	{
+		width: 96% ;
+		margin: 5% auto ;
+		float: none ;
+	}
+	/* ---------------  second <li></li> ------------------ */
+	.footer  .footerContainer .footerUl  .linksLi	
+	{
+		text-align: left ;
+	}
+}
+@media(min-width:611px) and (max-width:940px)
+{
+	/* ---------------  first <li></li> ------------------ */
+	.footer  .footerContainer .footerUl  .shoppingLi 
+	{
+		width: 96% ;
+		margin: 2% auto ;
+		float: none ;
+	}
+	/* ---------------  second <li></li> ------------------ */
+	.footer  .footerContainer .footerUl  .linksLi	
+	{
+		width: 19% ;
+		margin-right: 1%  ;
+		margin-left: 2% ;
+		float: left;
+		text-align: left ;
+	}
+	/* ---------------  third <li></li> ------------------ */
+	.footer  .footerContainer .footerUl  .ContactUsLi
+	{
+		width: 76% ;
+		margin: 1% ;
+		float: left;
+		padding-left: 15%;
+	}
+	
+}

@@ -1,0 +1,492 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="vendors/font-awesome.min.css">
+		<style>
+				/* ---------------- global ------------------- */
+				*
+				{
+					font-family: sans-serif ;
+					box-sizing: border-box ;
+				}
+				body
+				{
+					padding: 0 ;
+					margin: 0 ;
+				}
+				/* *********************************** Arrival section *********************************** */
+				.arrivalClass
+				{
+					width: 100% ;
+					height: auto ;
+					overflow: hidden ;
+				/*	border: 2px solid #00f; */
+				}
+				.arrivalClass  .arrivalContainerClass
+				{
+					width: 95% ;
+					height: auto ;
+					overflow: hidden ;
+					margin: 5px auto ;
+				/*	border: 2px solid #f0f; 	*/
+				}
+				/* header of arrival section : h2 */
+				.arrivalClass  .arrivalContainerClass h2
+				{
+					width: 300px ;
+					height: 60px;
+					background-color: #2980B9 ;
+					border-top-right-radius: 50px ;	
+					padding-top: 15px; 
+					padding-bottom: 10px; 
+					padding-left: 50px; 
+					color: #fff ;
+					text-transform: capitalize ;
+					margin: 0 ;
+				}
+				/* header line of arrival section : line */
+				.arrivalClass  .arrivalContainerClass  .headerArrivalLine
+				{
+					width: 100% ;
+					padding:1.5px ;
+					background-color: #bbb ;
+					margin: 0 ;
+				}
+				/* ********************** products container ********************** 	*/
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival
+				{
+					width: 85% ;
+					height: auto ;
+					overflow: hidden ;
+					margin: 30px auto ;
+				/*	border: 2px solid #f0f; */
+				}
+				/* ********************** common properities of 6 products  **********************  */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product
+				{
+					/* total_width = width + marign_left + margin_right = 31.3333 + 1 + 1 = 33.3333%	*/
+					width: 31.3333%;
+					height: auto ;
+					float: left ;
+					margin: 1% ;
+					border: 3px solid #aaa;
+				}
+				/* ********************** common properities of image container of 6 products  **********************  */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont
+				{
+					position: relative ;
+				/*	border: 2px solid #ff0; 	*/
+					background-color: #ccc;
+					padding: 30px;
+				}
+				/* ********************** common properities of "overlay layer" of image 6 products  **********************  */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont .productOverlayArrival 
+				{
+					position: absolute ;
+					top: 0 ;
+					left: 0 ;
+					width: 100% ;
+					height: 100% ;
+					/*   3 icons [ heart , shopping_cart , user ] عشان  اخفي ال */
+					overflow: hidden ;
+					cursor: pointer ;
+					background-color: rgba(0,0,0,0.3);
+					opacity:  0 ;
+					transition: 1s ease-in-out ;
+					/* تيجي في المنتصف overlay layer عشان العناصر اللي موجودة في ال	*/
+					text-align: center ;
+				}
+				/* ------------------------- when hover on product , the product overlay will apear ------------------------- */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont:hover .productOverlayArrival
+				{
+					opacity:  1 ;
+				}
+				/* ********************** common properities of icons of "overlay layer" of image 6 products  **********************  */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont .productOverlayArrival a
+				{
+					display: inline-block ;
+					background-color: #fff;
+					padding: 18px;
+					/*  overlay layer تكون منحرفة ناحية الشمال لما اشيل الفارة من علي ال icons عشان ال	*/
+					transform: translate(-50%,-50%);	
+					/* حجم كل ايقونة */
+					font-size: 25px ;
+					color: #000 ;
+					text-align: center ;
+					/*	تنزل من فوق لتحت hover عشان العناصر تكون خارج الاب بتاعها عشان لما اعمل  */
+					margin-top: -13% ;
+				}
+				/* ------------ heart icon ------------ */	
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont .productOverlayArrival
+				a:nth-of-type(1)
+				{
+					transition: 0.4s ease-in-out ;
+				}
+				/* ------------ heart icon : hover ------------ */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont .productOverlayArrival
+				a:nth-of-type(1):hover
+				{
+					color: #f00;
+				}
+				/* ------------ shopping-cart icon ------------ */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont .productOverlayArrival 
+				a:nth-of-type(2)
+				{
+					transition: 0.6s ease-in-out ;
+				}
+				/* ------------ shopping-cart icon :hover ------------ */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont .productOverlayArrival
+				a:nth-of-type(2):hover
+				{
+					color: #0f0;
+				}
+				/* ------------ user icon ------------ */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont .productOverlayArrival 
+				a:nth-of-type(3)
+				{
+					transition: 0.8s ease-in-out ;
+				}
+				/* ------------ user icon : hover ------------ */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont .productOverlayArrival
+				a:nth-of-type(3):hover
+				{
+					color: #00f;
+				}
+				/* ------------------------- when hover on box : [ heart,shoppng_cart,user] icons will fall ---------------------------- */
+				/*  Y من فوق لتحت علي المحور الراسي heart icon هيزل ال hover لما اعمل  */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont:hover .productOverlayArrival a:nth-of-type(1) ,
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont:hover .productOverlayArrival a:nth-of-type(2) ,
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont:hover .productOverlayArrival a:nth-of-type(3)
+				{
+					transform: translateY(180%);
+				}
+				/* ********************** common properities of <img> tag of 6 products  **********************  */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product .imageProductArrivalCont img
+				{
+					width: 100%;
+				}
+				/* ************** header of each product : h3 ************** */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  h3
+				{
+					color: #2980B9 ;
+					font-size: 25px;
+					margin: 0 ;
+					padding-top: 8px;
+					padding-bottom: 8px;
+					padding-left: 10px;
+					text-transform: capitalize ;	
+				}
+				/* ************** price of  each product  ************** */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct
+				{
+					height: auto ;
+					overflow: hidden ;
+					border-top: 3px solid #ccc; 
+					padding-top: 5px ;	
+				}
+				/* ************** left part  :  price of product  **************  */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .priceNumber
+				{
+					width: 58% ;
+					float: left ;
+					margin-left: 2% ;
+				/*	border: 2px solid #f0f; */
+				}
+				/* ************** left part  :  price of product : current price **************  */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .priceNumber .currentPrice
+				{
+					font-size: 23px;
+					color: #ff3300;
+					font-weight: bold ;
+				}
+				/* ************** left part  :  price of product : deleted price **************  */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .priceNumber .deletedPrice
+				{
+					font-size: 18px;
+					text-decoration: line-through ;
+					margin-left: 7px ;
+					color: #666 ;
+					font-weight: bold ;
+				}
+				/* ************** right part  :  price of product  **************  */
+				.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .rateOfProduct
+				{
+					width: 38% ;
+					float: right;
+					margin-right: 2% ;
+					padding: 5px;
+					font-size: 17px ;
+					color: rgb(243,170,34);
+				/*	border: 2px solid #ff0; */
+				}
+
+				/* ############################################## Responsive : navbar ############################################# */
+				/* ------------- mobile screen -------------- */
+				@media( min-width:0px) and ( max-width:664px)
+				{
+					/* ********************** common properities of 6 products  **********************  */
+					.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product
+					{
+						/* total_width = width + marign_left + margin_right = 90 + 5 + 5 = 100%	*/
+						width: 90%;
+						float: none;
+						margin: 5% ;
+						margin-bottom: 50px;
+					}
+				}
+				/* ------------- tablet screen -------------- */
+				@media( min-width:665px) and ( max-width:1000px)
+				{
+					/* ********************** common properities of 6 products  **********************  */
+					.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product
+					{
+						/* total_width = width + marign_left + margin_right = 48 + 1 + 1 = 50%	*/
+						width: 48%;
+						margin: 1% ;
+						margin-bottom: 10px;
+					}
+					/* ************** left part  :  price of product : current price **************  */
+					.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .priceNumber .currentPrice
+					{
+						display: inline-block;
+						font-size: 25px;
+						margin-top: 10px;
+					}
+					/* ************** left part  :  price of product : deleted price **************  */
+					.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .priceNumber .deletedPrice
+					{
+						font-size: 18px;
+						font-weight: bold ;
+					}
+					/* ************** left part  :  price of product : current price **************  */
+					/* **************************** right part  :  price of product  **************  */
+					.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .priceNumber 	   ,
+					.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .rateOfProduct  
+					{
+						display: block;
+						width: 100% ;
+						float: none;	
+					}
+				}
+				/* ------------- tablet screen -------------- */
+				@media( min-width:900px) and ( max-width:1178px)
+				{
+					/* ************** left part  :  price of product container  **************  */
+					/* **************************** right part  : container of rate of product  **************  */
+					.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .priceNumber 	   ,
+					.arrivalClass  .arrivalContainerClass  .productsContainerArrival  .product  .priceAndRateProduct  .rateOfProduct  
+					{
+						display: block;
+						width: 100% ;
+						float: none;	
+					}	
+				}
+			</style>
+		</head>
+		<body>
+			<!-- ******************************************* products Arrival section ***************************************** -->
+			<div class="arrivalClass"id="arrivalId">
+				<div class="arrivalContainerClass"id="arrivalContainerId">
+					<!-- header of arrival section : h2 -->
+					<h2>new arrivals</h2>
+					<!-- header line of arrival section : line -->
+					<div class="headerArrivalLine"></div>
+					<!-- **************************** header products of arrival section *************************  -->
+					<div class="productsContainerArrival">
+						<!-- ********************** product 1 **********************  -->
+						<div class="product">
+							<!--  image container of product overlay layer -->
+							<div class="imageProductArrivalCont">
+								<!-- icons of product overlay layer -->
+								<div class="productOverlayArrival">
+									<!--  product overlay layer -->
+									<a href="#"><i class="fa fa-heart"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="#"><i class="fa fa-user"></i></a>
+								</div>
+								<!-- image of product -->
+								<img src="images/arr_img1.jpg" alt="image not found">
+							</div>
+							<!--  header of product  -->
+							<h3>smart tv</h3>
+							<!-- price of product -->
+							<div class="priceAndRateProduct">
+								<!-- left part  :  price of product -->
+								<div class="priceNumber">
+									<span class="currentPrice">₹1000/-</span><span class="deletedPrice">₹1500/-</span>
+								</div>
+								<!-- right part  : rate of price of product :  stars -->
+								<div class="rateOfProduct">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half"></i>
+								</div>
+							</div>
+						</div>
+						<!-- ********************** product 2 **********************  -->
+						<div class="product">
+							<!--  image container of product overlay layer -->
+							<div class="imageProductArrivalCont">
+								<!-- icons of product overlay layer -->
+								<div class="productOverlayArrival">
+									<!--  product overlay layer -->
+									<a href="#"><i class="fa fa-heart"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="#"><i class="fa fa-user"></i></a>
+								</div>
+								<!-- image of product -->
+								<img src="images/arr_img2.jpg" alt="image not found">
+							</div>
+							<!--  header of product  -->
+							<h3>Game Console</h3>
+							<!-- price of product -->
+							<div class="priceAndRateProduct">
+								<!-- left part  :  price of product -->
+								<div class="priceNumber">
+									<span class="currentPrice">₹1000/-</span><span class="deletedPrice"> ₹1500/-</span>
+								</div>
+								<!-- right part  : rate of price of product :  stars -->
+								<div class="rateOfProduct">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half"></i>
+								</div>
+							</div>
+						</div>
+						<!-- ********************** product 3 **********************  -->
+						<div class="product">
+							<!--  image container of product overlay layer -->
+							<div class="imageProductArrivalCont">
+								<!-- icons of product overlay layer -->
+								<div class="productOverlayArrival">
+									<!--  product overlay layer -->
+									<a href="#"><i class="fa fa-heart"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="#"><i class="fa fa-user"></i></a>
+								</div>
+								<!-- image of product -->
+								<img src="images/arr_img3.jpg" alt="image not found">
+							</div>
+							<!--  header of product  -->
+							<h3>Latest Shoes</h3>
+							<!-- price of product -->
+							<div class="priceAndRateProduct">
+								<!-- left part  :  price of product -->
+								<div class="priceNumber">
+									<span class="currentPrice">₹1000/-</span><span class="deletedPrice"> ₹1500/-</span>
+								</div>
+								<!-- right part  : rate of price of product :  stars -->
+								<div class="rateOfProduct">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half"></i>
+								</div>
+							</div>
+						</div>
+						<!-- ********************** product 4 **********************  -->
+						<div class="product">
+							<!--  image container of product overlay layer -->
+							<div class="imageProductArrivalCont">
+								<!-- icons of product overlay layer -->
+								<div class="productOverlayArrival" id="productOverlayArrivalId">
+									<!--  product overlay layer -->
+									<a href="#" id="productOverlayIconsId"><i class="fa fa-heart"></i></a>
+									<a href="#" id="productOverlayIconsId"><i class="fa fa-shopping-cart"></i></a>
+									<a href="#" id="productOverlayIconsId"><i class="fa fa-user"></i></a>
+								</div>
+								<!-- image of product -->
+								<img src="images/arr_img4.jpg" alt="image not found">
+							</div>
+							<!--  header of product  -->
+							<h3>Smartphones</h3>
+							<!-- price of product -->
+							<div class="priceAndRateProduct">
+								<!-- left part  :  price of product -->
+								<div class="priceNumber">
+									<span class="currentPrice">₹1000/-</span><span class="deletedPrice"> ₹1500/-</span>
+								</div>
+								<!-- right part  : rate of price of product :  stars -->
+								<div class="rateOfProduct">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half"></i>
+								</div>
+							</div>
+						</div>
+						<!-- ********************** product 5 **********************  -->
+						<div class="product">
+							<!--  image container of product overlay layer -->
+							<div class="imageProductArrivalCont">
+								<!-- icons of product overlay layer -->
+								<div class="productOverlayArrival">
+									<!--  product overlay layer -->
+									<a href="#"><i class="fa fa-heart"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="#"><i class="fa fa-user"></i></a>
+								</div>
+								<!-- image of product -->
+								<img src="images/arr_img5.jpg" alt="image not found">
+							</div>
+							<!--  header of product  -->
+							<h3>Branded T-Shirts</h3>
+							<!-- price of product -->
+							<div class="priceAndRateProduct">
+								<!-- left part  :  price of product -->
+								<div class="priceNumber">
+									<span class="currentPrice">₹1000/-</span><span class="deletedPrice"> ₹1500/-</span>
+								</div>
+								<!-- right part  : rate of price of product :  stars -->
+								<div class="rateOfProduct">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half"></i>
+								</div>
+							</div>
+						</div>
+						<!-- ********************** product 6 **********************  -->
+						<div class="product">
+							<!--  image container of product overlay layer -->
+							<div class="imageProductArrivalCont">
+								<!-- icons of product overlay layer -->
+								<div class="productOverlayArrival">
+									<!--  product overlay layer -->
+									<a href="#"><i class="fa fa-heart"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="#"><i class="fa fa-user"></i></a>
+								</div>
+								<!-- image of product -->
+								<img src="images/arr_img6.jpg" alt="image not found">
+							</div>
+							<!--  header of product  -->
+							<h3>Amazing Speakers</h3>
+							<!-- price of product -->
+							<div class="priceAndRateProduct">
+								<!-- left part  :  price of product -->
+								<div class="priceNumber">
+									<span class="currentPrice">₹1000/-</span><span class="deletedPrice"> ₹1500/-</span>
+								</div>
+								<!-- right part  : rate of price of product :  stars -->
+								<div class="rateOfProduct">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

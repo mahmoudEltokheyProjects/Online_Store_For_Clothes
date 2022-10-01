@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="vendors/font-awesome.min.css">
+		<style>
+			/* ---------------- global ------------------- */
+			*
+			{
+				font-family: sans-serif ;
+				box-sizing: border-box ;
+			}
+			body
+			{
+				padding: 0 ;
+				margin: 0 ;
+			}
+			/* ************************************************** footer section ************************************* */
+			.footer
+			{
+				width: 100% ;
+				height: auto ;
+				overflow: hidden ;
+			/*	border: 2px solid #f00;*/
+			}
+			.footer  .footerContainer
+			{
+				width: 90% ;
+				height: auto ;
+				overflow: hidden ;
+			/*	border: 2px solid #0f0;*/
+				margin: 20px auto ;
+			}
+			.footer  .footerContainer .footerUl
+			{
+				list-style: none ;
+				padding: 0 ;
+			}
+			.footer  .footerContainer .footerUl  .shoppingLi  ,
+			.footer  .footerContainer .footerUl  .linksLi	  , 
+			.footer  .footerContainer .footerUl  .ContactUsLi
+			{
+			/*	border: 2px solid #0ff;*/
+			}
+			/* ---------------  first <li></li> ------------------ */
+			.footer  .footerContainer .footerUl  .shoppingLi 
+			{
+				width: 39%;
+				float: left ;
+				margin-right: 2% ;
+			}
+			/* ---------------  second <li></li> ------------------ */
+			.footer  .footerContainer .footerUl  .linksLi	 
+			{
+				width: 15% ;
+				float: left ;
+				text-align: center ;
+				margin-left:  1% ;
+				margin-right: 1% ;
+			}
+			/* ---------------  third <li></li> ------------------ */
+			.footer  .footerContainer .footerUl  .ContactUsLi
+			{
+				width: 39% ;
+				float: right;
+				margin-left: 2% ;
+			}
+			/* -------------- h5 of 3<li></li> ------------------- */
+			.footer  .footerContainer .footerUl  .shoppingLi  .footer1H5 ,
+			.footer  .footerContainer .footerUl  .linksLi	  .footer2H5 , 
+			.footer  .footerContainer .footerUl  .ContactUsLi .footer3H5
+			{
+				font-size: 30px;
+				text-transform: capitalize; 
+				margin: 0 ;
+			}
+			/* -------------- h5 of Links and Contact Us and shooping bag icon ------------------- */
+			.footer  .footerContainer .footerUl  .shoppingLi  .footer1H5  i  ,
+			.footer  .footerContainer .footerUl  .linksLi	  .footer2H5 , 
+			.footer  .footerContainer .footerUl  .ContactUsLi .footer3H5
+			{
+				color: #2980b9 ;
+			}
+			/* -------------- <p></p> of shopping link ------------------- */
+			.footer  .footerContainer .footerUl  .shoppingLi  .footerPara 
+			{
+				font-size:18px;
+				line-height: 1.5 ;
+				color: #666 ;
+			}
+			/* -------------- paragraph of second <li></li> : links of footer ------------------- */
+			.footer  .footerContainer .footerUl  .linksLi .homeLink    ,
+			.footer  .footerContainer .footerUl  .linksLi .arrivalLink ,
+			.footer  .footerContainer .footerUl  .linksLi .featuredink ,
+			.footer  .footerContainer .footerUl  .linksLi .galleryLink ,
+			.footer  .footerContainer .footerUl  .linksLi .dealLink
+			{
+				font-size: 22px;
+				transition: 2s ease-in-out ;
+				margin-top: 10px;
+				margin-bottom: 5px;
+			}
+			/* -------------- <a></a> of paragraph of second <li></li> : links of footer ------------------- */
+			.footer  .footerContainer .footerUl  .linksLi .homeLink     a ,
+			.footer  .footerContainer .footerUl  .linksLi .arrivalLink  a ,
+			.footer  .footerContainer .footerUl  .linksLi .featuredink  a ,
+			.footer  .footerContainer .footerUl  .linksLi .galleryLink  a ,
+			.footer  .footerContainer .footerUl  .linksLi .dealLink  	a
+			{
+				text-decoration: none ;
+				color: #555 ;
+				text-transform: capitalize ;
+			}
+			/* -------------- <a></a> of paragraph of second <li></li> : links of footer ------------------- */
+			.footer  .footerContainer .footerUl  .linksLi .homeLink     a:hover ,
+			.footer  .footerContainer .footerUl  .linksLi .arrivalLink  a:hover ,
+			.footer  .footerContainer .footerUl  .linksLi .featuredink  a:hover ,
+			.footer  .footerContainer .footerUl  .linksLi .galleryLink  a:hover ,
+			.footer  .footerContainer .footerUl  .linksLi .dealLink  	a:hover
+			{
+				text-decoration: underline ;
+			}
+			/* -------------- paragraph of third <li></li> : contact us of footer ------------------- */
+			.footer  .footerContainer .footerUl  .ContactUsLi .footerAddress  ,
+			.footer  .footerContainer .footerUl  .ContactUsLi .footerCall  ,
+			.footer  .footerContainer .footerUl  .ContactUsLi .footerMessage  
+			{
+				font-size: 18px;
+				color: #555 ;
+			}
+			/* -------------- <i></i> icons of paragraph of third <li></li> : contact us of footer ------------------- */
+			.footer  .footerContainer .footerUl  .ContactUsLi .footerAddress  i ,
+			.footer  .footerContainer .footerUl  .ContactUsLi .footerCall 	  i ,
+			.footer  .footerContainer .footerUl  .ContactUsLi .footerMessage  i
+			{
+				color: #2980b9 ;
+			}
+			/* /////////////////////////////////////////////// Reponsive /////////////////////////////////////////////// */
+			@media(min-width:0px) and (max-width:610px)
+			{
+				/* ---------------  first <li></li> ------------------ */
+				.footer  .footerContainer .footerUl  .shoppingLi  ,
+				/* ---------------  second <li></li> ------------------ */
+				.footer  .footerContainer .footerUl  .linksLi	,
+				/* ---------------  third <li></li> ------------------ */
+				.footer  .footerContainer .footerUl  .ContactUsLi
+				{
+					width: 96% ;
+					margin: 5% auto ;
+					float: none ;
+				}
+				/* ---------------  second <li></li> ------------------ */
+				.footer  .footerContainer .footerUl  .linksLi	
+				{
+					text-align: left ;
+				}
+			}
+			@media(min-width:611px) and (max-width:940px)
+			{
+				/* ---------------  first <li></li> ------------------ */
+				.footer  .footerContainer .footerUl  .shoppingLi 
+				{
+					width: 96% ;
+					margin: 2% auto ;
+					float: none ;
+				}
+				/* ---------------  second <li></li> ------------------ */
+				.footer  .footerContainer .footerUl  .linksLi	
+				{
+					width: 19% ;
+					margin-right: 1%  ;
+					margin-left: 2% ;
+					float: left;
+					text-align: left ;
+				}
+				/* ---------------  third <li></li> ------------------ */
+				.footer  .footerContainer .footerUl  .ContactUsLi
+				{
+					width: 76% ;
+					margin: 1% ;
+					float: left;
+					padding-left: 15%;
+				}
+			}
+			</style>
+		</head>
+	<body>
+		<!-- ************************************************** footer section ************************************** -->
+		<div class="footer" id="footerId">
+			<div class="footerContainer">
+				<ul class="footerUl">
+					<!-- first <li></li> -->
+					<li class="shoppingLi">
+						<h5 class="footer1H5">
+							<i class="fa fa-shopping-bag"></i>
+							Shopping
+						</h5>
+						<p class="footerPara">
+							Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Similique Expedita Molestiae Distinctio Facere Beatae Velit, Maiores Ullam Molestias Necessitatibus Sapiente.
+						</p>
+					</li>
+					<!-- second <li></li> -->
+					<li class="linksLi">
+						<h5 class="footer2H5">Links</h5>
+						<p class="homeLink"><a href="#">home</a></p>
+						<p class="arrivalLink"><a href="#">arrival</a></p>
+						<p class="featuredink"><a href="#">featured</a></p>
+						<p class="galleryLink"><a href="#">gallery</a></p>
+						<p class="dealLink"><a href="#">deal</a></p>
+					</li>
+					<!-- third <li></li> -->
+					<li class="ContactUsLi">
+						<h5 class="footer3H5">Contact Us</h5>
+						<p class="footerAddress"><i class="fa fa-map-marker"></i> Mumbai, Maharashtra, India - 400104</p>
+						<p class="footerCall"><i class="fa fa-phone"></i> +910000000</p>
+						<p class="footerMessage"><i class="fa fa-send"></i> Xyz@Yoursite.Com</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
